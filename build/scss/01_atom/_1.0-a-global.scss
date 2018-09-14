@@ -4,31 +4,14 @@
 
 // A.0. COLOR CONFIG --------------------------------------
 
-body { margin-top: 50px; }
-
-html, body { font-family: $default, cursive, arial; font-size: $normal; width: 100%; height: 100%; }
-
-h1,h2,h3 { font-family: $default, cursive, arial; }
-
-h3 { font-size: $xxl; }
-
-.site-title { font-family: $head, cursive, arial;
-  a { font-family: $head, cursive, arial;
-    &:hover,
-    &:active,
-    &:focus { text-decoration: none; }
-  }
+html, body {
+  font-family: $default, cursive, arial;
+  font-size: $normal;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.entry-title { margin-top: 0; font-size: 55px; font-family: $title, cursive, arial; text-align: center;
-  a { color: $grey;
-    &:hover,
-    &:active,
-    &:focus { text-decoration: none; }
-  }
-}
-
-.img-responsive { max-width: 100%; height: auto; }
 
 // A.0. END -----------------------------------------------
 
@@ -54,10 +37,7 @@ h3 { font-size: $xxl; }
 
 // E. MIN-WIDTH: 1200px +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($lg-up) {
-    
-    .container { max-width: 1000px; margin: 0 auto; } 
-} 
+@media ($lg-up) {}
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

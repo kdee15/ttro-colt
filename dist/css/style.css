@@ -1,44 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
-body {
-  margin-top: 50px; }
-
 html, body {
   font-family: "Roboto", cursive, arial;
   font-size: 14px;
   width: 100%;
-  height: 100%; }
-
-h1, h2, h3 {
-  font-family: "Roboto", cursive, arial; }
-
-h3 {
-  font-size: 32px; }
-
-.site-title {
-  font-family: "Roboto", cursive, arial; }
-  .site-title a {
-    font-family: "Roboto", cursive, arial; }
-    .site-title a:hover, .site-title a:active, .site-title a:focus {
-      text-decoration: none; }
-
-.entry-title {
-  margin-top: 0;
-  font-size: 55px;
-  font-family: "Roboto", cursive, arial;
-  text-align: center; }
-  .entry-title a {
-    color: #5E5E5E; }
-    .entry-title a:hover, .entry-title a:active, .entry-title a:focus {
-      text-decoration: none; }
-
-.img-responsive {
-  max-width: 100%;
-  height: auto; }
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1000px;
-    margin: 0 auto; } }
+  margin: 0;
+  padding: 0; }
 
 .a-icon {
   width: 30px;
@@ -276,305 +242,6 @@ h3 {
     margin-bottom: 24px;
     border-radius: 0; } }
 
-.bootstrap-select.btn-group {
-  font-family: "Roboto";
-  font-weight: 400;
-  width: 100% !important;
-  outline: none; }
-  .bootstrap-select.btn-group .dropdown-toggle {
-    font-family: "Roboto";
-    font-weight: 400;
-    height: 40px;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 9px 32px 9px 12px;
-    position: relative;
-    color: black !important;
-    border: 1px solid #ccc;
-    border-radius: 0;
-    text-transform: none;
-    background: #fff;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    outline: none;
-    min-width: 1px;
-    margin: 0; }
-    .bootstrap-select.btn-group .dropdown-toggle:hover, .bootstrap-select.btn-group .dropdown-toggle.active, .bootstrap-select.btn-group .dropdown-toggle:focus, .bootstrap-select.btn-group .dropdown-toggle.focus, .bootstrap-select.btn-group .dropdown-toggle:active:focus, .bootstrap-select.btn-group .dropdown-toggle:active.focus, .bootstrap-select.btn-group .dropdown-toggle.active:focus, .bootstrap-select.btn-group .dropdown-toggle.active.focus {
-      outline: none !important;
-      border-color: #ccc;
-      background: #fff; }
-    .bootstrap-select.btn-group .dropdown-toggle .bs-caret {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 38px;
-      width: 32px;
-      border-left: 1px solid #ccc;
-      font-size: 14px;
-      line-height: 20px;
-      padding: 7px 0px; }
-      .bootstrap-select.btn-group .dropdown-toggle .bs-caret .caret {
-        position: relative;
-        top: 1px;
-        display: inline-block;
-        font-family: 'Glyphicons Halflings';
-        font-style: normal;
-        font-weight: normal;
-        line-height: 20px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        right: auto;
-        margin: auto;
-        border: none;
-        width: auto;
-        height: auto;
-        transition: all 0.3s ease; }
-        .bootstrap-select.btn-group .dropdown-toggle .bs-caret .caret:before {
-          content: "\e259";
-          color: black; }
-  .bootstrap-select.btn-group .dropdown-menu li a {
-    outline: none;
-    padding-left: 12px;
-    padding-right: 12px; }
-    .bootstrap-select.btn-group .dropdown-menu li a:hover, .bootstrap-select.btn-group .dropdown-menu li a.active, .bootstrap-select.btn-group .dropdown-menu li a:focus, .bootstrap-select.btn-group .dropdown-menu li a.focus, .bootstrap-select.btn-group .dropdown-menu li a:active:focus, .bootstrap-select.btn-group .dropdown-menu li a:active.focus, .bootstrap-select.btn-group .dropdown-menu li a.active:focus, .bootstrap-select.btn-group .dropdown-menu li a.active.focus {
-      outline: none !important; }
-  .bootstrap-select.btn-group.open .caret {
-    -ms-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); }
-
-.form-control {
-  display: block;
-  width: 100%;
-  font-family: "Roboto";
-  font-weight: 400;
-  height: 40px;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 9px 12px;
-  color: black;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-  border-radius: 0;
-  box-shadow: none; }
-  .form-control::-webkit-input-placeholder {
-    color: black; }
-  .form-control::-moz-placeholder {
-    color: black; }
-  .form-control:hover, .form-control.active, .form-control:focus, .form-control.focus, .form-control:active:focus, .form-control:active.focus, .form-control.active:focus, .form-control.active.focus {
-    border-color: #ccc;
-    outline: none !important;
-    box-shadow: none; }
-
-.input-group-addon {
-  padding: 0px 6px 0px 5px;
-  font-size: 14px;
-  line-height: 20px;
-  color: #29ABE2;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 0; }
-  .input-group-addon .glyphicon {
-    top: 3px;
-    font-size: 20px;
-    line-height: 20px; }
-
-.greyinput .bootstrap-select.btn-group .dropdown-toggle, .greyInputFields .bootstrap-select.btn-group .dropdown-toggle {
-  background: #f2f2f2; }
-  .greyinput .bootstrap-select.btn-group .dropdown-toggle:hover, .greyinput .bootstrap-select.btn-group .dropdown-toggle.active, .greyinput .bootstrap-select.btn-group .dropdown-toggle:focus, .greyinput .bootstrap-select.btn-group .dropdown-toggle.focus, .greyinput .bootstrap-select.btn-group .dropdown-toggle:active:focus, .greyinput .bootstrap-select.btn-group .dropdown-toggle:active.focus, .greyinput .bootstrap-select.btn-group .dropdown-toggle.active:focus, .greyinput .bootstrap-select.btn-group .dropdown-toggle.active.focus, .greyInputFields .bootstrap-select.btn-group .dropdown-toggle:hover, .greyInputFields .bootstrap-select.btn-group .dropdown-toggle.active, .greyInputFields .bootstrap-select.btn-group .dropdown-toggle:focus, .greyInputFields .bootstrap-select.btn-group .dropdown-toggle.focus, .greyInputFields .bootstrap-select.btn-group .dropdown-toggle:active:focus, .greyInputFields .bootstrap-select.btn-group .dropdown-toggle:active.focus, .greyInputFields .bootstrap-select.btn-group .dropdown-toggle.active:focus, .greyInputFields .bootstrap-select.btn-group .dropdown-toggle.active.focus {
-    background: #f2f2f2; }
-
-.greyinput .bootstrap-select.btn-group .dropdown-menu, .greyInputFields .bootstrap-select.btn-group .dropdown-menu {
-  background: #f2f2f2; }
-  .greyinput .bootstrap-select.btn-group .dropdown-menu li a:hover, .greyinput .bootstrap-select.btn-group .dropdown-menu li a.active, .greyinput .bootstrap-select.btn-group .dropdown-menu li a:focus, .greyinput .bootstrap-select.btn-group .dropdown-menu li a.focus, .greyinput .bootstrap-select.btn-group .dropdown-menu li a:active:focus, .greyinput .bootstrap-select.btn-group .dropdown-menu li a:active.focus, .greyinput .bootstrap-select.btn-group .dropdown-menu li a.active:focus, .greyinput .bootstrap-select.btn-group .dropdown-menu li a.active.focus, .greyInputFields .bootstrap-select.btn-group .dropdown-menu li a:hover, .greyInputFields .bootstrap-select.btn-group .dropdown-menu li a.active, .greyInputFields .bootstrap-select.btn-group .dropdown-menu li a:focus, .greyInputFields .bootstrap-select.btn-group .dropdown-menu li a.focus, .greyInputFields .bootstrap-select.btn-group .dropdown-menu li a:active:focus, .greyInputFields .bootstrap-select.btn-group .dropdown-menu li a:active.focus, .greyInputFields .bootstrap-select.btn-group .dropdown-menu li a.active:focus, .greyInputFields .bootstrap-select.btn-group .dropdown-menu li a.active.focus {
-    background: #fff; }
-
-.greyinput .form-control, .greyInputFields .form-control {
-  background-color: #f2f2f2; }
-
-.greyinput .input-group-addon, .greyInputFields .input-group-addon {
-  background-color: #f2f2f2; }
-
-.search-results-filters-wrapper {
-  display: none;
-  padding: 20px 0;
-  background: #F2F2F2; }
-
-.search-filters-content:after {
-  content: ' ';
-  display: block;
-  height: 0;
-  clear: both; }
-
-.search-filters-fields {
-  float: none; }
-  .search-filters-fields:after {
-    content: ' ';
-    display: block;
-    height: 0;
-    clear: both; }
-
-.search-filters-input {
-  float: left;
-  margin: 0 0 10px 0;
-  position: relative; }
-
-.search-filters-location,
-.form-item-search-location {
-  width: 100%;
-  display: inline-block;
-  position: relative; }
-  .search-filters-location .autoAreaLookupList,
-  .form-item-search-location .autoAreaLookupList {
-    max-width: 100%; }
-  .search-filters-location:after,
-  .form-item-search-location:after {
-    content: " ";
-    background-image: url("../../assets/images/location_marker.svg");
-    display: block;
-    background-repeat: no-repeat;
-    background-size: 11px;
-    background-position: center center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 39px;
-    width: 32px;
-    border-left: 1px solid #ccc; }
-
-.search-filters-min-price,
-.form-item-min-price {
-  width: 47%;
-  margin: 0 2% 10px 0;
-  display: inline-block; }
-
-.search-filters-max-price,
-.form-item-max-price {
-  width: 47%;
-  margin: 0 0 10px 2%;
-  display: inline-block; }
-
-.search-filters-bedrooms,
-.form-item-num-of-bedrooms {
-  width: 47%;
-  margin: 0 2% 10px 0;
-  display: inline-block; }
-
-.search-filters-property-type,
-.form-item-property-type-dropdown {
-  width: 47%;
-  margin: 0 0 10px 2%;
-  display: inline-block; }
-
-.search-filters-property-filter,
-.form-item-property-filters-dropdown {
-  width: 100%;
-  margin: 0 0 10px 0;
-  display: inline-block; }
-
-.search-filters-input .form-control {
-  padding: 10px 6px; }
-
-.search-filters-input .bootstrap-select .dropdown-toggle {
-  border-color: #ccc;
-  border-radius: 4px;
-  padding: 16px 28px 4px 6px; }
-
-.block__search-items,
-.block__search-control {
-  padding: 20px 15px; }
-  .block__search-items .form-type-select .dropdown-toggle,
-  .block__search-control .form-type-select .dropdown-toggle {
-    border-color: #ccc;
-    border-radius: 4px;
-    padding: 16px 28px 4px 6px; }
-
-.search-filters-input .search-filters-field-tag {
-  position: absolute;
-  top: 6px;
-  left: 7px;
-  font-size: 10px;
-  line-height: 12px;
-  color: #001844;
-  z-index: 3; }
-
-.form-type-select {
-  position: relative; }
-  .form-type-select.form-item-filter-price .control-label {
-    top: 23px; }
-  .form-type-select .control-label {
-    position: absolute;
-    top: 6px;
-    left: 7px;
-    font-size: 10px;
-    line-height: 12px;
-    color: #001844;
-    z-index: 3; }
-
-.btn {
-  margin: 1% auto;
-  display: block; }
-  .btn .icon {
-    display: none; }
-
-.search-filters-button {
-  padding-top: 20px;
-  float: none; }
-
-.search-results-filters-toggle {
-  background: #fff;
-  padding: 20px 0;
-  margin: 0;
-  text-align: center; }
-  .search-results-filters-toggle .btn-toggle-filters {
-    margin-bottom: 0; }
-
-.search-controls .sort-div {
-  font-size: 16px;
-  line-height: 24px;
-  color: #808080;
-  cursor: pointer; }
-
-.search-controls #search-filter-toggle {
-  display: none; }
-  .search-controls #search-filter-toggle.on {
-    display: block;
-    width: 100%;
-    background: white;
-    z-index: 100; }
-    .search-controls #search-filter-toggle.on .property-search-sort-form {
-      margin: 20px; }
-
-.search-results-filters-toggle {
-  display: none; }
-
-.block__search-control.container {
-  width: 100%;
-  display: block;
-  background-color: transparent; }
-  .block__search-control.container .form-item {
-    width: 100%;
-    margin: 0 0 10px 0;
-    vertical-align: bottom; }
-    .block__search-control.container .form-item.form-item-search-location {
-      position: relative; }
-      .block__search-control.container .form-item.form-item-search-location input {
-        padding-right: 30px; }
-      .block__search-control.container .form-item.form-item-search-location:after {
-        content: " ";
-        background-image: url("../../assets/images/location_marker.svg");
-        display: block;
-        background-repeat: no-repeat;
-        background-size: 11px;
-        background-position: center center;
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 39px;
-        width: 32px;
-        border-left: 1px solid #ccc; }
-
 #masthead {
   height: 50px;
   position: fixed;
@@ -701,265 +368,52 @@ body #mast {
     font-size: 120px;
     margin-top: 30px; } }
 
-#footend {
-  text-align: center;
-  padding: 40px; }
-
-.o-card.stacked .o-card-image img {
-  width: 100%;
-  height: auto; }
-
-.o-card.stacked .o-card-footer .a-btn {
-  min-width: auto; }
-
-.article {
-  margin-bottom: 24px; }
-  .article .article__figure .image-wrapper img {
+.o-card {
+  min-height: 200px; }
+  .o-card.left-1 {
     width: 100%;
-    height: auto; }
-  .article .article__body h3 {
-    font-size: 45px;
-    font-family: "Roboto", cursive, arial;
-    text-align: center; }
-
-.o-table-layout {
-  display: table;
-  border: border-collapse;
-  background: #F2F2F2; }
-  .o-table-layout .a-table-row {
-    display: table-row;
-    background: white; }
-    .o-table-layout .a-table-row .a-table-cell {
-      display: table-cell; }
-    .o-table-layout .a-table-row:nth-child(odd) {
-      background: #E2E2E2; }
-  .o-table-layout.full-width {
-    width: 100%; }
-
-/**
- * Toggle Switch Globals
- *
- * All switches should take on the class `c-hamburger` as well as their
- * variant that will give them unique properties. This class is an overview
- * class that acts as a reset for all versions of the icon.
- */
-.c-hamburger {
-  display: block;
-  position: fixed;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 50px;
-  height: 50px;
-  font-size: 0;
-  text-indent: -9999px;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-  right: 0;
-  top: 0;
-  transition: 0.3s;
-  z-index: 100000;
-  background: #FFF; }
-  .c-hamburger.is-active {
-    right: 0;
-    transition: 0.3s; }
-
-.c-hamburger:focus {
-  outline: none; }
-
-.c-hamburger span {
-  display: block;
-  position: absolute;
-  top: 23px;
-  left: 10px;
-  right: 10px;
-  height: 4px;
-  background: #CCC; }
-
-.c-hamburger span::before,
-.c-hamburger span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #CCC;
-  content: ""; }
-
-.c-hamburger span::before {
-  top: -10px; }
-
-.c-hamburger span::after {
-  bottom: -10px; }
-
-/**
- * Style 1
- *
- * Rotating hamburger icon (rot), that simply rotates 90 degrees when activated.
- * Nothing too fancy, simple transition.
- */
-.c-hamburger--rot span {
-  transition: transform 0.3s; }
-
-/* active state, i.e. menu open */
-.c-hamburger--rot.is-active span {
-  transform: rotate(90deg); }
-
-/**
- * Style 2
- * 
- * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
- * down to center and transform into an "x".
- */
-.c-hamburger--htx span::before,
-.c-hamburger--htx span::after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s; }
-
-.c-hamburger--htx span::before {
-  transition-property: top, transform; }
-
-.c-hamburger--htx span::after {
-  transition-property: bottom, transform; }
-
-/* active state, i.e. menu open */
-.c-hamburger--htx.is-active span {
-  background: none; }
-
-.c-hamburger--htx.is-active span::before {
-  top: 0;
-  transform: rotate(45deg); }
-
-.c-hamburger--htx.is-active span::after {
-  bottom: 0;
-  transform: rotate(-45deg); }
-
-.c-hamburger--htx.is-active span::before,
-.c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.3s; }
-
-/**
- * Style 3
- *
- * Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing
- * arrow. Usually indicates an off canvas menu sliding in from left that
- * will be close on re-click of the icon.
- */
-.c-hamburger--htla {
-  background-color: #32dc64; }
-
-.c-hamburger--htla span {
-  transition: transform 0.3s; }
-
-.c-hamburger--htla span::before {
-  transform-origin: top right;
-  transition: transform 0.3s, width 0.3s, top 0.3s; }
-
-.c-hamburger--htla span::after {
-  transform-origin: bottom right;
-  transition: transform 0.3s, width 0.3s, bottom 0.3s; }
-
-/* active state, i.e. menu open */
-.c-hamburger--htla.is-active {
-  background-color: #19903c; }
-
-.c-hamburger--htla.is-active span {
-  transform: rotate(180deg); }
-
-.c-hamburger--htla.is-active span::before,
-.c-hamburger--htla.is-active span::after {
-  width: 50%; }
-
-.c-hamburger--htla.is-active span::before {
-  top: 0;
-  transform: translateX(19px) translateY(2px) rotate(45deg); }
-
-.c-hamburger--htla.is-active span::after {
-  bottom: 0;
-  transform: translateX(19px) translateY(-2px) rotate(-45deg); }
-
-/**
- * Style 4
- *
- * Hamburger to right-arrow (htra). Hamburger menu transforms to a
- * right-pointing arrow. Usually indicates an off canvas menu sliding in from 
- * right that will be close on re-click of the icon.
- */
-.c-hamburger--htra {
-  background-color: #ff9650; }
-
-.c-hamburger--htra span {
-  transition: transform 0.3s; }
-
-.c-hamburger--htra span::before {
-  transform-origin: top left;
-  transition: transform 0.3s, width 0.3s, top 0.3s; }
-
-.c-hamburger--htra span::after {
-  transform-origin: bottom left;
-  transition: transform 0.3s, width 0.3s, bottom 0.3s; }
-
-/* active state, i.e. menu open */
-.c-hamburger--htra.is-active {
-  background-color: #e95d00; }
-
-.c-hamburger--htra.is-active span {
-  transform: rotate(180deg); }
-
-.c-hamburger--htra.is-active span::before,
-.c-hamburger--htra.is-active span::after {
-  width: 50%; }
-
-.c-hamburger--htra.is-active span::before {
-  top: 0;
-  transform: translateX(-4px) translateY(2px) rotate(-45deg); }
-
-.c-hamburger--htra.is-active span::after {
-  bottom: 0;
-  transform: translateX(-4px) translateY(-2px) rotate(45deg); }
-
-.home .btn-back {
-  display: none; }
-
-.home .wrapper {
-  position: relative;
-  margin-top: 100%;
-  background: #FFFFFF;
-  z-index: 1; }
-
-.single .article__figure {
-  text-align: center; }
-  .single .article__figure img {
+    background-color: red; }
+  .o-card.right-1 {
     width: 100%;
-    height: auto;
-    max-width: 900px;
-    margin: 0 auto; }
+    background-color: pink; }
+  .o-card.left-2 {
+    width: 100%;
+    background-color: orange; }
+  .o-card.right-2 {
+    width: 100%;
+    background-color: yellow; }
+  .o-card.left-3 {
+    width: 100%;
+    background-color: green; }
+  .o-card.right-3 {
+    width: 100%;
+    background-color: blue; }
 
-.single h3 {
-  font-size: 55px;
-  font-family: "Roboto";
-  text-align: center; }
+@media (min-width: 768px) {
+  .o-card {
+    min-height: 200px;
+    float: left; }
+    .o-card.left-1 {
+      width: 50%;
+      background-color: red; }
+    .o-card.right-1 {
+      width: 50%;
+      background-color: pink; }
+    .o-card.left-2 {
+      width: 60%;
+      background-color: orange; }
+    .o-card.right-2 {
+      width: 40%;
+      background-color: yellow; }
+    .o-card.left-3 {
+      width: 40%;
+      background-color: green; }
+    .o-card.right-3 {
+      width: 60%;
+      background-color: blue; } }
 
-.section-front {
-  background-image: url("../images/background/bg-table-mountain.jpg");
-  background-size: cover;
-  background-position: center center;
-  position: fixed;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  z-index: 0; }
-
-@media (min-width: 1200px) {
-  .home .container {
-    max-width: 900px;
-    margin: 0 auto; }
-  .single .container {
-    max-width: 900px;
-    margin: 0 auto; } }
+.grid-wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,30 +5,16 @@
 // A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
 
 // A.1.1. BASE CARD SETTINGS ------------------------------
-.o-card {
-  &.stacked {
-    .o-card-image {
-      img { width: 100%; height: auto; }
-    }
-    .o-card-body {}
-    .o-card-footer {
-      .a-btn { min-width: auto; }
-    }
-  }
+.o-card { min-height: 200px;
+  &.left-1 { width: 100%; background-color: red; }
+  &.right-1 { width: 100%; background-color: pink; }
+  &.left-2 { width: 100%; background-color: orange; }
+  &.right-2 { width: 100%; background-color: yellow; }
+  &.left-3 { width: 100%; background-color: green; }
+  &.right-3 { width: 100%; background-color: blue; }
 }
 
 // A.1.1. END ---------------------------------------------
-
-.article { margin-bottom: $base-md;
-  .article__figure {
-      .image-wrapper {
-          img { width: 100%; height: auto; }
-      }
-  }
-  .article__body {
-    h3 { font-size: $xxxl; font-family: $title, cursive, arial; text-align: center; }
-  }
-}
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -44,7 +30,18 @@
 
 // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-up) {} 
+@media ($sm-up) {
+
+  .o-card { min-height: 200px; float: left;
+    &.left-1 { width: 50%; background-color: red; }
+    &.right-1 { width: 50%; background-color: pink; }
+    &.left-2 { width: 60%; background-color: orange; }
+    &.right-2 { width: 40%; background-color: yellow; }
+    &.left-3 { width: 40%; background-color: green; }
+    &.right-3 { width: 60%; background-color: blue; }
+  }
+
+}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
