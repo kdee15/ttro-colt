@@ -189,24 +189,6 @@ $('.c-hamburger').click(function(e) {
     
 // A.3. SCROLL TO LINK ------------------------------------------------------------------------------------------------
 
-	$('.scroll-to, .email-us, .home-link').click(function(event){
-
-			event.preventDefault();
-			// calculate destination place
-			var dest=0;
-			if($(this.hash).offset().top > $(document).height()-$(window).height()){
-					dest=$(document).height()-$(window).height();
-			}else{
-					dest=$(this.hash).offset().top;
-			}
-			// go to destination
-			$('html,body').animate({scrollTop:dest}, 1000,'swing');
-
-			// BURGER MENU
-			$('#mobi-nav').addClass('hide-nav');
-			$('.burger').removeClass('is-active');
-
-	});
 
 // A.3. END -----------------------------------------------------------------------------------------------------------
     
@@ -287,101 +269,80 @@ $('.showhide').click(function(e) {
 	// A.2.3. END -------------------------------------------
 
 // A.2. END -----------------------------------------------------------------------------------------------------------
-     
-// A.2. END -----------------------------------------------------------------------------------------------------------
-    
-	 
-// A.2. END -----------------------------------------------------------------------------------------------------------
-  
-// A.4. SHOW HIDE LOGO ------------------------------------------------------------------------------------------------
 
-	var t = $(".wrapper").offset().top;
-
-	$(document).scroll(function(){
-
-		if (document.documentElement.clientWidth > 300) { 
-
-			// Hide the logo, and show as you scroll
-			if($(this).scrollTop() > t)
-			{   
-				$('#masthead').addClass('not-top');
-				$('.social-media').addClass('not-top');
-
-			}else{
-				$('#masthead').removeClass('not-top');
-				$('.social-media').removeClass('not-top');
-			}							
-		}
-
-	});
-
-// A.4. END -----------------------------------------------------------------------------------------------------------
-    
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // JAVASCRIPT LAYER [APP.JS]  =========================================================================================
 
+// ====== INDEX  ======================================================================================================
+// ==
+// == A. SWIPER CAROUSEL
+// ==
+// ====== INDEX  ======================================================================================================
+
 // A. SHOW/HIDE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// A.9. AUTO HEIGHT ---------------------------------------------------------------------------------------------------
     
-    /*
-        http://codepen.io/micahgodbolt/pen/FgqLc
+// A.1. MOBILE CLASS --------------------------------------------------------------------------------------------------
 
-        Thanks to CSS Tricks for pointing out this bit of jQuery
-        http://css-tricks.com/equal-height-blocks-in-rows/
-        It's been modified into a function called at page load and then each time the page is resized.
-        One large modification was to remove the set height before each new calculation.
-    */
+var mySwiper = new Swiper ('.features-carousel', {
 
-    var equalheight;
-    equalheight = function(container){
-        var currentTallest = 0,
-            currentRowStart = 0,
-            topPosition = 0,
-            currentDiv = 0,
-            rowDivs = [],
-            $el;
-        $(container).each(function() {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    575: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    }
+  }
+})
+// A.1. END -----------------------------------------------------------------------------------------------------------
 
-            $el = $(this);
-            $($el).height('auto');
-            topPosition = $el.position().top;
+// A.1. MOBILE CLASS --------------------------------------------------------------------------------------------------
 
-            if (currentRowStart != topPosition) {
-                for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-                    rowDivs[currentDiv].height(currentTallest);
-                }
-                rowDivs.length = 0; // empty the array
-                currentRowStart = topPosition;
-                currentTallest = $el.height();
-                rowDivs.push($el);
-            } else {
-                rowDivs.push($el);
-                currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-            }
-            for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-                rowDivs[currentDiv].height(currentTallest);
-            }
-        });
-    };
+var mySwiper = new Swiper ('.images-carousel', {
 
-    $(window).load(function() {
-        
-        //equalheight('.section__articles .col-md-6');
-        //equalheight('.section__articles .col-md-6 .article__body h3');
-        
-        if($(window).width() >= 480) {}
-        
-    });
-
-    $(window).resize(function() {
-        
-        //equalheight('.section__articles .col-md-6');
-        //equalheight('.section__articles .col-md-6 .article__body h3');
-        
-    });
-    
-// A.9. END -----------------------------------------------------------------------------------------------------------
+  direction: 'horizontal',
+  loop: true,
+  lazy: true,
+  slidesPerView: 2,
+  spaceBetween: 0,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    575: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    }
+  }
+})
+// A.1. END -----------------------------------------------------------------------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // FILE END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

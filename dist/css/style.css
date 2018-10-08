@@ -7,6 +7,10 @@ html, body {
   padding: 0;
   font-weight: 300; }
 
+h3 {
+  font-size: 21px;
+  line-height: 34px; }
+
 .page.colt-sample-1 {
   background: #282828; }
 
@@ -320,20 +324,20 @@ p {
 .card {
   border: 0;
   border-radius: 0; }
+  .card .o-card .m-card-title {
+    font-size: 16px;
+    letter-spacing: 1.01px;
+    line-height: 19px;
+    margin-bottom: 30px;
+    font-weight: 400; }
+  .card .o-card .m-card-body .a-card-text {
+    font-weight: 400;
+    font-size: 16px; }
   .card .o-card.reason-card {
     background-color: #F2F2F2;
     height: 100%;
     text-align: center;
     padding: 30px; }
-    .card .o-card.reason-card .m-card-title {
-      font-size: 16px;
-      letter-spacing: 1.01px;
-      line-height: 19px;
-      margin-bottom: 30px;
-      font-weight: 400; }
-    .card .o-card.reason-card .m-card-body .a-card-text {
-      font-weight: 400;
-      font-size: 16px; }
 
 .o-block.reasons-block {
   margin-left: -15px;
@@ -358,6 +362,32 @@ p {
   text-align: center;
   width: 100%;
   padding: 20px 0 0; }
+
+.o-block.boost-block .m-image-block {
+  padding: 0; }
+  .o-block.boost-block .m-image-block .m-image {
+    width: calc(100% - 30px);
+    box-shadow: 15px 15px 0 #FF1D35;
+    margin-bottom: 45px; }
+
+.o-block.boost-block .m-text-block .m-text-wrapper {
+  display: block; }
+
+.o-block.boost-block .m-text-block.footer-block {
+  text-align: center;
+  padding: 0 30px;
+  max-width: 540px;
+  margin: 15px auto 45px;
+  font-weight: 300; }
+
+@media (min-width: 768px) {
+  .o-block.boost-block .a-block-title {
+    margin: 45px auto;
+    padding: 0; }
+  .o-block.boost-block .m-text-block .m-text-wrapper {
+    padding: 20% 30px; }
+  .o-block.boost-block .m-text-block.footer-block {
+    margin: 45px auto; } }
 
 .grid-wrapper {
   max-width: 1200px;

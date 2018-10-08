@@ -9,6 +9,17 @@
 .o-block {
   &.boost-block {
     .a-block-title { text-align: center; width: 100%; padding: 20px 0 0; }
+
+    .m-image-block { padding: 0;
+      .m-image { width: calc(100% - 30px); box-shadow: 15px 15px 0 $red; margin-bottom: $base-lg; }
+    }
+
+    .m-text-block {
+      .m-text-wrapper { display: block; }
+      &.footer-block {
+        text-align: center; padding: 0 $base-md; max-width: 540px; margin: $base auto $base-lg; font-weight: 300;
+      }
+    }
   }
 }
 
@@ -34,7 +45,20 @@
 @media ($sm-dn) {}
 
 // min-width 768px
-@media ($sm-up) {}
+@media ($sm-up) {
+
+  .o-block {
+    &.boost-block {
+      .a-block-title { margin: $base-lg auto; padding: 0; }
+
+      .m-text-block {
+        .m-text-wrapper { padding: 20% $base-md; }
+        &.footer-block { margin: $base-lg auto; }
+      }
+    }
+  }
+
+}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
