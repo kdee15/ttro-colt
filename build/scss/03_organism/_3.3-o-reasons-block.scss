@@ -1,17 +1,17 @@
-// 3. ORGANISM [ 3.1. CARDS ] #########################################################################################
+// 3. ORGANISM [ 3.3. REASONS BLOCK ] #################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
+// A.1. GENERAL BLOCK INFO --------------------------------------------------------------------------------------------
 
 // A.1.1. BASE CARD SETTINGS ------------------------------
-.o-card { min-height: 200px;
-  &.left-1 { width: 100%; background-color: red; }
-  &.right-1 { width: 100%; background-color: pink; }
-  &.left-2 { width: 100%; background-color: orange; }
-  &.right-2 { width: 100%; background-color: yellow; }
-  &.left-3 { width: 100%; background-color: green; }
-  &.right-3 { width: 100%; background-color: blue; }
+
+.o-block {
+  &.reasons-block { margin-left: -$base; margin-right: -$base;
+    .card {
+      .reason-card { margin: 5px 20px; }
+    }
+  }
 }
 
 // A.1.1. END ---------------------------------------------
@@ -20,25 +20,36 @@
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// B. MAX-WIDTH: 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// B. MAX-WIDTH: 575px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+//max-width 575px
 @media ($xs-dn) {}
 
-@media ($sm-dn) {} 
+//min-width 576px
+@media ($xs-up) {}
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+// max-width 767px
+@media ($sm-dn) {}
+
+// min-width 768px
 @media ($sm-up) {
 
-  .o-card { min-height: 200px; float: left;
-    &.left-1 { width: 50%; background-color: red; }
-    &.right-1 { width: 50%; background-color: pink; }
-    &.left-2 { width: 60%; background-color: orange; }
-    &.right-2 { width: 40%; background-color: yellow; }
-    &.left-3 { width: 40%; background-color: green; }
-    &.right-3 { width: 60%; background-color: blue; }
+  .o-block {
+    &.reasons-block { margin-left: -$base; margin-right: -$base;
+      .card {
+        .reason-card { margin: 0 3px; }
+        &:first-child {
+          .reason-card { margin-left: 0; margin-right: 6px; }
+        }
+        &:last-child {
+          .reason-card { margin-left: 6px; margin-right: 0; }
+        }
+      }
+    }
   }
 
 }
@@ -47,7 +58,11 @@
 
 // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($md-up) {} 
+//max-width 991px
+@media ($md-dn) {}
+
+//min-width 992px
+@media ($md-up) {}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

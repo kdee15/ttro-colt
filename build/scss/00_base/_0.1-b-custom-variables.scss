@@ -49,11 +49,11 @@ $xlg-dn: 'max-width:1399px';
 
 // B.1. PADDING & MARGINS ---------------------------------
 
-$base-xxl:  48px;
-$base-xl:   40px;
-$base-lg:   32px;
-$base-md:   24px;
-$base:      16px;
+$base-xxl:  75px;
+$base-xl:   60px;
+$base-lg:   45px;
+$base-md:   30px;
+$base:      15px;
 $base-sm:   8px;
 $base-xs:   4px;
 
@@ -82,23 +82,18 @@ $xxs:     8px;
 
 // C. COLORS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-$aqua:        #67C3BF;
-$royal:       #001844;
-$royal-l:     #334669;
-$blue-lt:     #29ABE2;
-$orange:      #E99900;
-$lilac:       #4D5D7C;
+$red:         #FF1D35;
 
 $black:       #000000;
-$grey-f2:     #F2F2F2;
-$grey-cc:     #CCCCCC;
-$grey-80:     #808080;
-$grey-lt: 		#F2F2F2;
+$grey-28:     #282828;
 $grey:    		#5E5E5E;
+$grey-80:     #808080;
 $grey-blue:   #808bA1;
 $grey-b3:     #B3B5B4;
 $grey-ce:     #cececf;
-
+$grey-cc:     #CCCCCC;
+$grey-f2:     #F2F2F2;
+$grey-lt: 		#F2F2F2;
 $white: 			#FFFFFF;
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
