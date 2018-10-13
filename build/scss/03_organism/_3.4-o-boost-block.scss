@@ -58,12 +58,12 @@
       .a-block-title { margin: $base-lg auto; padding: 0; }
 
       .m-text-block {
-        .m-text-wrapper {
+        .m-text-wrapper { padding: $base-md;
           &.a-text-accent {
             &:before { display: block; }
           }
         }
-        &.footer-block { margin: $base-lg auto;
+        &.footer-block { margin: $base-lg auto; padding: $base-md 0;
           &.a-text-accent {
             &:before { display: block; }
           }

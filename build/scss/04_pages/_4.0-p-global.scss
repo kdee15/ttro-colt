@@ -6,7 +6,15 @@
 
 // A.1. HOME ----------------------------------------------
 
-.grid-wrapper { max-width: 1200px; margin: 0 auto; }
+.page {
+  &.colt-sample-1-2 {
+    .o-block {
+      &.intro-block {
+        .m-text-block { background-color: $red; }
+      }
+    }
+  }
+}
 
 
 // A.1. END -----------------------------------------------
