@@ -7,16 +7,23 @@
 // A.1.1. BASE CARD SETTINGS ------------------------------
 
 .o-block {
-  &.intro-block {
-    .m-text-block { padding:$base-lg $base; background-color: $red; color: $white; padding: 55px 20px;
-      .a-block-title {}
-      .a-block-subheading { font-size: 16px; line-height: 19px; letter-spacing: 1.01px; margin-bottom: 30px; }
+  &.intro-block { position: relative; z-index: 10;
+    .m-text-block { padding:$base-md; background-color: $blue; color: $white;
+      .a-block-title { text-transform: uppercase; }
+      .a-block-subheading { font-size: 16px; line-height: 19px; letter-spacing: 1.01px; margin: 0 30px 30px 0; }
       .a-block-text { font-size: 16px; line-height: 26px; letter-spacing: 0.71px; margin-bottom: 10px;
-        &.boxed-left { display: block; margin-top: 10px; padding-left: 20px; border-left: 2px solid $white; }
+        &.boxed-top { border-width: 1px; }
       }
 
     }
-    .m-image-block { padding: $base+5; background-color: $white; }
+    .m-image-block { padding: $base-md; background-color: $white; width: 100%;
+      .m-image {
+        &.cropped {height: 100%;
+          &:before { padding-top: 85%; }
+          .a-image { height: 100%; width: auto; @include center-align(); }
+        }
+      }
+    }
   }
 }
 
@@ -46,9 +53,9 @@
 
   .o-block {
     &.intro-block { padding-bottom: 50px;
-      .m-text-block { width: 55%; margin-top: -130px; padding: 65px 80px; }
-      .m-image-block { width: 45%; padding-right: 0;
-        .m-image { margin-top: 30px; margin-left: 40px; }
+      .m-text-block { width: 55%; margin-top: -130px; }
+      .m-image-block { width: 45%; padding-right: 0; padding-bottom: 0;
+        .m-image { margin: 0; }
       }
     }
   }

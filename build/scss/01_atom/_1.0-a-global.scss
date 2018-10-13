@@ -17,7 +17,7 @@ h3 { font-size: 21px; line-height: 34px;  }
 .container { position: relative; }
 
 .o-block { background-color: $white;
-  .a-block-title { font-size: 36px; line-height: 38px; letter-spacing: 1.71px; margin-bottom: 30px; }
+  .a-block-title { font-size: 22px; line-height: 28px; letter-spacing: 1.71px; margin-bottom: 30px; }
 }
 
 // A.0. END -----------------------------------------------
@@ -25,8 +25,32 @@ h3 { font-size: 21px; line-height: 34px;  }
 // A.0. END -----------------------------------------------
 
 figure { margin: 0; }
+
+.m-image {
+  &.cropped { @include aspect-ratio (100%, 56%); overflow: hidden;
+    .a-image { @include position(absolute, 0); }
+  }
+}
+
+.m-image {
+  &.scalable { @include aspect-ratio (100%, 56%); overflow: hidden; height: 100%;
+    .a-image { @include position(absolute, 0); height: 100%; @include center-align; width: auto; }
+  }
+}
+
 .a-image { width: 100%; height: auto; }
+
+
+
 p { line-height: 26px; letter-spacing: 0.71px; }
+
+.boxed-left { display: block; padding-left: 20px; border-left: 2px solid $white; }
+.boxed-top { display: block; padding-top: 20px; border-top: 2px solid $white; }
+.dropshadow-right { width: calc(100% - 30px); box-shadow: 15px 15px 0 $red; margin-bottom: $base-lg; }
+
+.a-text-accent { position: relative;
+  &:before { position: absolute; top: 0; left: 0; height: 2px; width: 100px; background-color: $black; content: ''; }
+}
 
 
 // A.0. END -----------------------------------------------
@@ -52,6 +76,10 @@ p { line-height: 26px; letter-spacing: 0.71px; }
 @media ($sm-up) {
 
   .container { max-width: 980px; }
+
+  .o-block {
+    .a-block-title { font-size: 36px; line-height: 38px; }
+  }
 
 }
 

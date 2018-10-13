@@ -15,7 +15,7 @@ var mySwiper = new Swiper ('.features-carousel', {
   direction: 'horizontal',
   loop: true,
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 15,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -27,11 +27,11 @@ var mySwiper = new Swiper ('.features-carousel', {
   breakpoints: {
     992: {
       slidesPerView: 3,
-      spaceBetween: 15,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 5,
     },
     575: {
       slidesPerView: 1,

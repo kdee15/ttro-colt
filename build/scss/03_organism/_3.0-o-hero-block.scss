@@ -1,35 +1,36 @@
-// 3. ORGANISM [ 3.4. BOOST BLOCK ] ###################################################################################
+// 3. ORGANISM [ 3.0. HERO BLOCK ] ####################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.1. GENERAL BLOCK INFO --------------------------------------------------------------------------------------------
 
-// A.1.1. BASE CARD SETTINGS ------------------------------
+// A.1.1. TOP HERO BLOCK ----------------------------------
 
 .o-block {
-  &.boost-block {
-    .a-block-title { text-align: center; width: 100%; padding: 20px 0 0; }
-
-    .m-image-block { padding: 0;
-      .m-image {  }
-    }
-
-    .m-text-block {
-      .m-text-wrapper { display: block; padding-top: $base-md;
-        &.a-text-accent {
-          &:before { left: $base-md; display: none; }
-        }
-      }
-      &.footer-block { padding: $base-md $base; max-width: 500px; margin: $base auto $base-lg; font-weight: 300;
-        &.a-text-accent {
-          &:before { display: none; }
-        }
+  &.hero-banner {
+    .m-image {
+      &.cropped {
+        &:before { padding-top: 53%; }
       }
     }
   }
 }
 
 // A.1.1. END ---------------------------------------------
+
+// A.1.2. BOTTOM HERO BLOCK -------------------------------
+
+.o-block {
+  &.image-block {
+    .m-image {
+      &.cropped {
+        &:before { padding-top: 51.8%; }
+      }
+    }
+  }
+}
+
+// A.1.2. END ---------------------------------------------
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -51,28 +52,7 @@
 @media ($sm-dn) {}
 
 // min-width 768px
-@media ($sm-up) {
-
-  .o-block {
-    &.boost-block {
-      .a-block-title { margin: $base-lg auto; padding: 0; }
-
-      .m-text-block {
-        .m-text-wrapper {
-          &.a-text-accent {
-            &:before { display: block; }
-          }
-        }
-        &.footer-block { margin: $base-lg auto;
-          &.a-text-accent {
-            &:before { display: block; }
-          }
-        }
-      }
-    }
-  }
-
-}
+@media ($sm-up) {}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

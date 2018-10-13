@@ -10,13 +10,18 @@
   .o-card {
 
     .m-card-title {
-      font-size: 16px; letter-spacing: 1.01px; line-height: 19px; margin-bottom: $base-md; font-weight: 400;
+      font-size: 16px; letter-spacing: 1.01px; line-height: 16px; margin-bottom: $base-md; font-weight: 700;
     }
     .m-card-body {
-      .a-card-text { font-weight: 400; font-size: 16px; }
+      .a-card-text { font-weight: 400; font-size: 14px; line-height: 18px; }
     }
 
-    &.reason-card { background-color: $grey-f2; height: 100%; text-align: center; padding: $base-md; }
+    &.reason-card {
+      background-color: $grey-f2; height: 100%; text-align: left;
+
+      .m-card-title { margin: $base-md; margin-bottom: $base; padding-bottom: $base; border-bottom: 1px solid $black; }
+      .m-card-body { margin: 0 $base-md $base;  }
+    }
   }
 }
 

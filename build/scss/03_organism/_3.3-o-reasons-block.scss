@@ -41,7 +41,9 @@
   .o-block {
     &.reasons-block { margin-left: -$base; margin-right: -$base;
       .card {
-        .reason-card { margin: 0 3px; }
+        .reason-card { margin: 0 3px;
+          .m-card-body { margin-bottom: $base; }
+        }
         &:first-child {
           .reason-card { margin-left: 0; margin-right: 6px; }
         }
