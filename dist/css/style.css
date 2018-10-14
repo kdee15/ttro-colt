@@ -101,6 +101,10 @@ p {
     background-color: #000000;
     content: ''; }
 
+a.a-text-link {
+  font-weight: 800;
+  color: #0D5187; }
+
 @media (min-width: 768px) {
   .container {
     max-width: 980px; }
@@ -470,11 +474,10 @@ p {
 
 .o-block.boost-block .m-text-block.footer-block {
   padding: 30px 15px;
-  max-width: 500px;
   margin: 15px auto 45px;
   font-weight: 300; }
   .o-block.boost-block .m-text-block.footer-block.a-text-accent:before {
-    display: none; }
+    left: 15px; }
 
 @media (min-width: 768px) {
   .o-block.boost-block .a-block-title {
@@ -486,9 +489,11 @@ p {
       display: block; }
   .o-block.boost-block .m-text-block.footer-block {
     margin: 45px auto;
-    padding: 30px 0; }
+    padding: 30px 0;
+    max-width: 500px; }
     .o-block.boost-block .m-text-block.footer-block.a-text-accent:before {
-      display: block; } }
+      display: block;
+      left: 0; } }
 
 .o-block.features-block .swiper-container {
   overflow-x: hidden;

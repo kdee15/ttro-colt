@@ -20,9 +20,9 @@
           &:before { left: $base-md; display: none; }
         }
       }
-      &.footer-block { padding: $base-md $base; max-width: 500px; margin: $base auto $base-lg; font-weight: 300;
+      &.footer-block { padding: $base-md $base; margin: $base auto $base-lg; font-weight: 300;
         &.a-text-accent {
-          &:before { display: none; }
+          &:before { left: $base; }
         }
       }
     }
@@ -63,9 +63,9 @@
             &:before { display: block; }
           }
         }
-        &.footer-block { margin: $base-lg auto; padding: $base-md 0;
+        &.footer-block { margin: $base-lg auto; padding: $base-md 0; max-width: 500px;
           &.a-text-accent {
-            &:before { display: block; }
+            &:before { display: block; left: 0; }
           }
         }
       }
