@@ -7,13 +7,56 @@
 // A.1. HOME ----------------------------------------------
 
 .page {
-  &.colt-sample-1-2 {
+  &.colt-1-1 {
+    .o-block {
+      &.intro-block {
+        .m-text-block { background-color: $blue; }
+      }
+    }
+
+    .o-block {
+      &.features-block {
+        .swiper-pagination {
+          .swiper-pagination-bullet {
+            &.swiper-pagination-bullet-active { background: $blue; }
+          }
+        }
+      }
+    }
+
+    a {
+      &.a-text-link { color: $blue; }
+    }
+
+  }
+
+  &.colt-1-2 {
     .o-block {
       &.intro-block {
         .m-text-block { background-color: $red; }
       }
     }
+
+    .o-block {
+      &.features-block {
+        .swiper-pagination {
+          .swiper-pagination-bullet {
+            &.swiper-pagination-bullet-active { background: $red; }
+          }
+        }
+      }
+    }
+
+    .o-block {
+      &.block-2-col-1 { margin-top: $base-xl; margin-bottom: $base-xl; }
+    }
+
+    a {
+      &.a-text-link { color: $red; }
+    }
+
   }
+
 }
 
 

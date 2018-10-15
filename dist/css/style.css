@@ -87,7 +87,7 @@ p {
 
 .dropshadow-right {
   width: calc(100% - 30px);
-  box-shadow: 15px 15px 0 #FF1D35;
+  box-shadow: 15px 15px 0 #C33427;
   margin-bottom: 45px; }
 
 .a-text-accent {
@@ -332,6 +332,17 @@ a.a-text-link {
     margin-bottom: 24px;
     border-radius: 0; } }
 
+.m-text-block.centered-block {
+  padding: 30px 15px;
+  margin: 15px auto 45px;
+  font-weight: 300; }
+
+@media (min-width: 768px) {
+  .m-text-block.centered-block {
+    margin: 45px auto;
+    padding: 30px 0;
+    max-width: 500px; } }
+
 .o-header {
   width: 100%;
   text-align: right;
@@ -343,7 +354,7 @@ a.a-text-link {
     height: 102px;
     position: relative;
     display: inline-block;
-    background: #FF1D35; }
+    background: #C33427; }
     .o-header .m-logo img {
       position: absolute;
       top: 50%;
@@ -365,7 +376,6 @@ a.a-text-link {
   z-index: 10; }
   .o-block.intro-block .m-text-block {
     padding: 30px;
-    background-color: #0D5187;
     color: #FFFFFF; }
     .o-block.intro-block .m-text-block .a-block-title {
       text-transform: uppercase; }
@@ -530,15 +540,32 @@ a.a-text-link {
   width: 16px;
   height: 4px;
   border-radius: 0; }
-  .o-block.features-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: #0D5187; }
 
 @media (min-width: 768px) {
   .o-block.features-block .swiper-button-prev,
   .o-block.features-block .swiper-button-next {
     display: block; } }
 
-.page.colt-sample-1-2 .o-block.intro-block .m-text-block {
-  background-color: #FF1D35; }
+.page.colt-1-1 .o-block.intro-block .m-text-block {
+  background-color: #0D5187; }
+
+.page.colt-1-1 .o-block.features-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #0D5187; }
+
+.page.colt-1-1 a.a-text-link {
+  color: #0D5187; }
+
+.page.colt-1-2 .o-block.intro-block .m-text-block {
+  background-color: #C33427; }
+
+.page.colt-1-2 .o-block.features-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #C33427; }
+
+.page.colt-1-2 .o-block.block-2-col-1 {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.page.colt-1-2 a.a-text-link {
+  color: #C33427; }
 
 /*# sourceMappingURL=style.css.map */

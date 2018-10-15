@@ -8,7 +8,7 @@
 
 .o-block {
   &.intro-block { position: relative; z-index: 10;
-    .m-text-block { padding:$base-md; background-color: $blue; color: $white;
+    .m-text-block { padding:$base-md; color: $white;
       .a-block-title { text-transform: uppercase; }
       .a-block-subheading { font-size: 16px; line-height: 19px; letter-spacing: 1.01px; margin: 0 30px 30px 0; }
       .a-block-text { font-size: 16px; line-height: 26px; letter-spacing: 0.71px; margin-bottom: 10px;
