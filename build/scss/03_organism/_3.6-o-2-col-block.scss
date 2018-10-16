@@ -1,51 +1,35 @@
-// 3. ORGANISM [ 3.0. HERO BLOCK ] ####################################################################################
+// 3. ORGANISM [ 3.4. BOOST BLOCK ] ###################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.1. GENERAL BLOCK INFO --------------------------------------------------------------------------------------------
 
-// A.1.1. TOP HERO BLOCK ----------------------------------
+// A.1.1. BASE CARD SETTINGS ------------------------------
 
 .o-block {
-  &.hero-banner {
-    .m-image {
-      &.cropped {
-        &:before { padding-top: 53%; }
-      }
+  &.block-2-col {
+    .a-block-title { text-align: center; width: 100%; padding: 20px 0 0; }
+
+    .m-image-block { padding: 0;
+      .m-image {  }
     }
 
-    // A.1.1.2. HERO BANNER WITH TEXT ---------------------
-
-    &.text-hero { position: relative;
-
-      .m-image {
-        &.cropped { position: absolute; width: 100%; height: 100%;
-          &:before { padding-top: 0; }
-          .a-image { @include center-align(); height: 100%; width: auto; }
+    .m-text-block {
+      .m-text-wrapper { display: block; padding-top: $base-md;
+        &.a-text-accent {
+          &:before { left: $base-md; display: none; }
         }
       }
-
-      .m-text-block { position: relative; margin: $base-xl $base $base; }
-
+      &.footer-block { padding: $base-md $base; margin: $base auto $base-lg; font-weight: 300;
+        &.a-text-accent {
+          &:before { left: $base; }
+        }
+      }
     }
   }
 }
 
 // A.1.1. END ---------------------------------------------
-
-// A.1.2. BOTTOM HERO BLOCK -------------------------------
-
-.o-block {
-  &.image-block {
-    .m-image {
-      &.cropped {
-        &:before { padding-top: 51.8%; }
-      }
-    }
-  }
-}
-
-// A.1.2. END ---------------------------------------------
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -57,28 +41,7 @@
 @media ($xs-dn) {}
 
 //min-width 576px
-@media ($xs-up) {
-
-
-
-  .o-block {
-    &.hero-banner {
-
-      // A.1.1.2. HERO BANNER WITH TEXT ---------------------
-
-      &.text-hero {
-
-        .m-image {
-          &.cropped {
-            .a-image { height: auto; width: 100%; }
-          }
-        }
-      }
-    }
-  }
-
-
-}
+@media ($xs-up) {}
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -90,23 +53,21 @@
 // min-width 768px
 @media ($sm-up) {
 
-
   .o-block {
-    &.hero-banner {
+    &.block-2-col {
+      .a-block-title { margin: $base-lg auto; padding: 0; }
 
-      // A.1.1.2. HERO BANNER WITH TEXT ---------------------
-
-      &.text-hero {
-
-        .m-image {
-          &.cropped { position: relative; height: auto;
-            &:before { padding-top: 53%; }
-            .a-image { @include center-align(); height: auto; width: 100%; }
+      .m-text-block {
+        .m-text-wrapper { padding: $base-md;
+          &.a-text-accent {
+            &:before { display: block; }
           }
         }
-
-        .m-text-block { margin: 0; @include middle-align(); max-width: 500px; }
-
+        &.footer-block { margin: $base-lg auto; padding: $base-md 0; max-width: 500px;
+          &.a-text-accent {
+            &:before { display: block; left: 0; }
+          }
+        }
       }
     }
   }

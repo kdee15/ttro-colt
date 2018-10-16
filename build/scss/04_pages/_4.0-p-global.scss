@@ -7,6 +7,7 @@
 // A.1. HOME ----------------------------------------------
 
 .page {
+
   &.colt-1-1 {
     .o-block {
       &.intro-block {
@@ -57,6 +58,21 @@
 
   }
 
+  &.colt-2-1 {
+
+    .o-block {
+      &.block-2-col {
+        .m-text-block {
+          .m-text-wrapper { padding: 0;
+            .a-block-title { text-align: left; margin: 0 0 $base 0; font-size: 24px; }
+            p { line-height: 20px; }
+          }
+        }
+        &.color-block { background: $red; color: $white; }
+      }
+    }
+  }
+
 }
 
 
@@ -76,13 +92,45 @@
 
 // C. MIN-WIDTH: 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($sm-up) {} 
+@media ($sm-up) {
+
+  .page {
+    &.colt-2-1 {
+
+      .o-block {
+        &.block-2-col {
+          .m-text-block {
+            .m-text-wrapper { padding: 0 $base-md; }
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // D. MIN-WIDTH: 992px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@media ($md-up) {} 
+@media ($md-up) {
+
+  .page {
+    &.colt-2-1 {
+
+      .o-block {
+        &.block-2-col {
+          .m-text-block {
+            .m-text-wrapper {
+              p { line-height: 24px; }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
