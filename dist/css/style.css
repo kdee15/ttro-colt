@@ -352,7 +352,7 @@ a.a-text-link {
 .m-text-block.centered-block {
   padding: 30px 15px;
   margin: 15px auto 45px;
-  font-weight: 300; }
+  font-weight: 400; }
 
 @media (min-width: 768px) {
   .m-text-block.centered-block {
@@ -603,9 +603,14 @@ a.a-text-link {
     height: 27px; }
 
 .o-block.features-block .swiper-pagination .swiper-pagination-bullet {
-  width: 16px;
-  height: 4px;
-  border-radius: 0; }
+  width: 18px;
+  height: 6px;
+  border-radius: 0;
+  outline: none !important; }
+  .o-block.features-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    box-shadow: 0 0 6px #000000; }
+  .o-block.features-block .swiper-pagination .swiper-pagination-bullet:hover {
+    box-shadow: 0 0 6px #000000; }
 
 @media (min-width: 768px) {
   .o-block.features-block .swiper-button-prev,

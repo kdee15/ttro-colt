@@ -35,8 +35,9 @@
     }
 
     .swiper-pagination {
-      .swiper-pagination-bullet { width: 16px; height: 4px; border-radius: 0;
-        &.swiper-pagination-bullet-active {}
+      .swiper-pagination-bullet { width: 18px; height: 6px; border-radius: 0; outline: none!important;
+        &.swiper-pagination-bullet-active { box-shadow: 0 0 6px $black; }
+        &:hover { box-shadow: 0 0 6px $black; }
       }
     }
 
