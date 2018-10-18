@@ -4,7 +4,7 @@
 
 // A.1. GENERAL BLOCK INFO --------------------------------------------------------------------------------------------
 
-// A.1.1. BASE CARD SETTINGS ------------------------------
+// A.1.1. FEATURES CAROUSEL -------------------------------
 
 .o-block {
   &.features-block {
@@ -32,6 +32,8 @@
 
       &:hover { opacity: 1; transition: 0.2s; width: 17px; height: 27px; }
 
+      &.swiper-button-disabled { opacity: 0; }
+
     }
 
     .swiper-pagination {
@@ -45,6 +47,50 @@
 }
 
 // A.1.1. END ---------------------------------------------
+
+// A.1.2. NO LOOP CAROUSEL --------------------------------
+
+.o-block {
+  &.features-block {
+    .swiper-container { overflow-x: hidden; padding-bottom: $base-lg;
+      .swiper-wrapper { }
+    }
+
+    .swiper-button {
+      @include vertical-align(absolute);
+      width: 15px;
+      height: 25px;
+      background-size: cover;
+      display: none;
+      opacity: 0.3;
+      transition: 0.2s;
+      outline: none!important;
+
+      &.swiper-button-next {
+        background-image: url('../../dist/images/site/button--arrow-right.svg'); right: 6px; left: auto;
+      }
+
+      &.swiper-button-prev {
+        background-image: url('../../dist/images/site/button--arrow-left.svg'); left: 6px; right: auto;
+      }
+
+      &:hover { opacity: 1; transition: 0.2s; width: 17px; height: 27px; }
+
+      &.swiper-button-disabled { opacity: 0; }
+
+    }
+
+    .swiper-pagination {
+      .swiper-pagination-bullet { width: 18px; height: 6px; border-radius: 0; outline: none!important;
+        &.swiper-pagination-bullet-active { box-shadow: 0 0 6px $black; }
+        &:hover { box-shadow: 0 0 6px $black; }
+      }
+    }
+
+  }
+}
+
+// A.1.2. END ---------------------------------------------
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -85,7 +131,17 @@
 @media ($md-dn) {}
 
 //min-width 992px
-@media ($md-up) {}
+@media ($md-up) {
+
+  .o-block {
+    &.features-block {
+      &.no-loop-carousel {
+        .swiper-pagination { display: none; }
+      }
+    }
+  }
+
+}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

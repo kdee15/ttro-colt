@@ -25,7 +25,9 @@
         }
       }
 
-      .m-text-block { position: relative; margin: $base-xl $base $base; }
+      .m-text-block { position: relative; margin: $base-xl $base $base;
+        .m-text-wrapper { color: $white; }
+      }
 
     }
   }
