@@ -57,7 +57,9 @@ p { line-height: 26px; letter-spacing: 0.71px; }
 }
 
 a {
-  &.a-text-link { font-weight: 800; color: $blue; }
+  &.a-text-link { font-weight: 800; color: $blue;
+    &.a-white { color: $white; font-weight: 600; }
+  }
 }
 
 

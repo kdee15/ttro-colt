@@ -121,6 +121,9 @@ p {
 a.a-text-link {
   font-weight: 800;
   color: #0D5187; }
+  a.a-text-link.a-white {
+    color: #FFFFFF;
+    font-weight: 600; }
 
 @media (min-width: 768px) {
   .container {
@@ -592,11 +595,11 @@ a.a-text-link {
   transition: 0.2s;
   outline: none !important; }
   .o-block.features-block .swiper-button.swiper-button-next {
-    background-image: url("../../dist/images/site/button--arrow-right.svg");
+    background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-right.svg");
     right: 6px;
     left: auto; }
   .o-block.features-block .swiper-button.swiper-button-prev {
-    background-image: url("../../dist/images/site/button--arrow-left.svg");
+    background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-left.svg");
     left: 6px;
     right: auto; }
   .o-block.features-block .swiper-button:hover {
@@ -635,11 +638,11 @@ a.a-text-link {
   transition: 0.2s;
   outline: none !important; }
   .o-block.features-block .swiper-button.swiper-button-next {
-    background-image: url("../../dist/images/site/button--arrow-right.svg");
+    background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-right.svg");
     right: 6px;
     left: auto; }
   .o-block.features-block .swiper-button.swiper-button-prev {
-    background-image: url("../../dist/images/site/button--arrow-left.svg");
+    background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-left.svg");
     left: 6px;
     right: auto; }
   .o-block.features-block .swiper-button:hover {
