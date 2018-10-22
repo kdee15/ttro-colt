@@ -56,6 +56,14 @@ p { line-height: 26px; letter-spacing: 0.71px; }
   &:before { bottom: -15px; top: auto; }
 }
 
+.a-accent-bottom { @include header-accent(50px, 6px, $black); position: relative;
+  &:before { bottom: -15px; top: auto; }
+}
+
+.a-accent-top { @include header-accent(50px, 6px, $black); position: relative;
+  &:before { top: 10px; left: $base; bottom: auto; }
+}
+
 a {
   &.a-text-link { font-weight: 800; color: $blue;
     &.a-white { color: $white; font-weight: 600; }
@@ -89,6 +97,10 @@ a {
 
   .o-block {
     .a-block-title { font-size: 36px; line-height: 38px; }
+  }
+
+  .a-accent-top {
+    &:before { top: 0; left: 0; bottom: auto; }
   }
 
 }

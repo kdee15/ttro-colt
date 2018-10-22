@@ -29,6 +29,7 @@
         padding-bottom: $base;
         border-bottom: 1px solid $black;
         text-transform: uppercase;
+        &.no-border { border-bottom: 0; margin-bottom: 0; }
       }
       .m-card-body { margin: 0 $base-md $base;  }
     }

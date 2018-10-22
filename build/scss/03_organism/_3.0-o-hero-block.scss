@@ -26,7 +26,11 @@
       }
 
       .m-text-block { position: relative; margin: $base-xl $base $base;
-        .m-text-wrapper { color: $white; }
+        .m-text-wrapper { color: $white;
+          .a-accent-bottom {
+            &:before { background-color: $white; }
+          }
+        }
       }
 
     }
