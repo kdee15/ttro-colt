@@ -60,12 +60,16 @@
 // B. MAX-WIDTH: 575px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 //max-width 575px
-@media ($xs-dn) {}
+@media ($xs-dn) {
+
+  .o-block {
+    &.hero-banner { min-height: 400px; }
+  }
+
+}
 
 //min-width 576px
 @media ($xs-up) {
-
-
 
   .o-block {
     &.hero-banner {

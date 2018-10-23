@@ -97,6 +97,13 @@
     }
   }
 
+  &.colt-3-1 {
+    .no-loop-carousel {
+      .swiper-container {
+        &.no-loop { margin: $base; }
+      }
+    }
+  }
 
 }
 
@@ -120,8 +127,8 @@
 @media ($sm-up) {
 
   .page {
-    &.colt-2-1 {
 
+    &.colt-2-1 {
       .o-block {
         &.block-2-col {
           .m-text-block {
@@ -130,6 +137,15 @@
         }
       }
     }
+
+    &.colt-3-1 {
+      .no-loop-carousel { margin-bottom: $base-md;
+        .swiper-container {
+          &.no-loop { margin: -$base-md $base-lg $base; }
+        }
+      }
+    }
+
   }
 
 }

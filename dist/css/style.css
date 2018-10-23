@@ -12,9 +12,6 @@ h3 {
   font-size: 21px;
   line-height: 34px; }
 
-.page.colt-sample-1 {
-  background: #282828; }
-
 .container {
   position: relative; }
 
@@ -70,6 +67,21 @@ figure {
 .a-image {
   width: 100%;
   height: auto; }
+
+.a-red {
+  color: #C33427; }
+
+.a-blue {
+  color: #0D5187; }
+
+.a-white {
+  color: #FFFFFF; }
+
+.a-bg-red {
+  background-color: #C33427; }
+
+.a-bg-blue {
+  background-color: #0D5187; }
 
 p {
   line-height: 26px;
@@ -454,6 +466,10 @@ a.a-text-link {
 .o-block.image-block .m-image.cropped:before {
   padding-top: 51.8%; }
 
+@media (max-width: 575px) {
+  .o-block.hero-banner {
+    min-height: 400px; } }
+
 @media (min-width: 576px) {
   .o-block.hero-banner.text-hero .m-image.cropped .a-image {
     height: auto;
@@ -621,100 +637,65 @@ a.a-text-link {
       display: block;
       left: 0; } }
 
-.o-block.features-block .swiper-container {
-  overflow-x: hidden;
-  padding-bottom: 45px; }
-
-.o-block.features-block .swiper-button {
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 15px;
-  height: 25px;
-  background-size: cover;
-  display: none;
-  opacity: 0.3;
-  transition: 0.2s;
-  outline: none !important; }
-  .o-block.features-block .swiper-button.swiper-button-next {
-    background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-right.svg");
-    right: 6px;
-    left: auto; }
-  .o-block.features-block .swiper-button.swiper-button-prev {
-    background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-left.svg");
-    left: 6px;
-    right: auto; }
-  .o-block.features-block .swiper-button:hover {
-    opacity: 1;
+.o-block.features-block {
+  position: relative; }
+  .o-block.features-block .swiper-container {
+    overflow-x: hidden; }
+  .o-block.features-block .swiper-button {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 15px;
+    height: 25px;
+    background-size: cover;
+    display: none;
+    opacity: 0.3;
     transition: 0.2s;
-    width: 17px;
-    height: 27px; }
-  .o-block.features-block .swiper-button.swiper-button-disabled {
-    opacity: 0; }
-
-.o-block.features-block .swiper-pagination .swiper-pagination-bullet {
-  width: 18px;
-  height: 6px;
-  border-radius: 0;
-  outline: none !important; }
-  .o-block.features-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    box-shadow: 0 0 6px #000000; }
-  .o-block.features-block .swiper-pagination .swiper-pagination-bullet:hover {
-    box-shadow: 0 0 6px #000000; }
-
-.o-block.features-block .swiper-container {
-  overflow-x: hidden;
-  padding-bottom: 45px; }
-
-.o-block.features-block .swiper-button {
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 15px;
-  height: 25px;
-  background-size: cover;
-  display: none;
-  opacity: 0.3;
-  transition: 0.2s;
-  outline: none !important; }
-  .o-block.features-block .swiper-button.swiper-button-next {
-    background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-right.svg");
-    right: 6px;
-    left: auto; }
-  .o-block.features-block .swiper-button.swiper-button-prev {
-    background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-left.svg");
-    left: 6px;
-    right: auto; }
-  .o-block.features-block .swiper-button:hover {
-    opacity: 1;
-    transition: 0.2s;
-    width: 17px;
-    height: 27px; }
-  .o-block.features-block .swiper-button.swiper-button-disabled {
-    opacity: 0; }
-
-.o-block.features-block .swiper-pagination .swiper-pagination-bullet {
-  width: 18px;
-  height: 6px;
-  border-radius: 0;
-  outline: none !important; }
-  .o-block.features-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    box-shadow: 0 0 6px #000000; }
-  .o-block.features-block .swiper-pagination .swiper-pagination-bullet:hover {
-    box-shadow: 0 0 6px #000000; }
+    outline: none !important; }
+    .o-block.features-block .swiper-button.swiper-button-next {
+      background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-right.svg");
+      right: 6px;
+      left: auto; }
+    .o-block.features-block .swiper-button.swiper-button-prev {
+      background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-left.svg");
+      left: 6px;
+      right: auto; }
+    .o-block.features-block .swiper-button:hover {
+      opacity: 1;
+      transition: 0.2s;
+      width: 17px;
+      height: 27px; }
+    .o-block.features-block .swiper-button.swiper-button-disabled {
+      opacity: 0; }
+  .o-block.features-block .swiper-pagination {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px; }
+    .o-block.features-block .swiper-pagination .swiper-pagination-bullet {
+      width: 18px;
+      height: 6px;
+      border-radius: 0;
+      outline: none !important;
+      margin: 0 3px; }
+      .o-block.features-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        box-shadow: 0 0 6px #000000; }
+      .o-block.features-block .swiper-pagination .swiper-pagination-bullet:hover {
+        box-shadow: 0 0 6px #000000; }
 
 @media (min-width: 768px) {
   .o-block.features-block .swiper-button-prev,
   .o-block.features-block .swiper-button-next {
-    display: block; } }
+    display: block; }
+  .o-block.features-block .swiper-pagination {
+    margin: 15px 0 30px; } }
 
 @media (min-width: 992px) {
-  .o-block.features-block.no-loop-carousel .swiper-pagination {
-    display: none; } }
+  .o-block.features-block {
+    padding: 0 30px; }
+    .o-block.features-block.no-loop-carousel .swiper-pagination {
+      display: none; } }
 
 .o-block.block-2-col .a-block-title {
   text-align: center;
@@ -738,6 +719,22 @@ a.a-text-link {
   .o-block.block-2-col .m-text-block.footer-block.a-text-accent:before {
     left: 15px; }
 
+.o-block.block-2-col.colours {
+  position: relative; }
+  .o-block.block-2-col.colours .m-image-block {
+    display: none; }
+    .o-block.block-2-col.colours .m-image-block:before {
+      background: red; }
+  .o-block.block-2-col.colours .m-text-block {
+    background: #C33427; }
+    .o-block.block-2-col.colours .m-text-block .m-text-wrapper {
+      color: #FFFFFF; }
+      .o-block.block-2-col.colours .m-text-block .m-text-wrapper .a-block-title {
+        text-align: left;
+        margin: 15px 0 30px; }
+        .o-block.block-2-col.colours .m-text-block .m-text-wrapper .a-block-title:before {
+          background: #FFFFFF; }
+
 @media (min-width: 768px) {
   .o-block.block-2-col .a-block-title {
     margin: 45px auto;
@@ -752,7 +749,25 @@ a.a-text-link {
     max-width: 500px; }
     .o-block.block-2-col .m-text-block.footer-block.a-text-accent:before {
       display: block;
-      left: 0; } }
+      left: 0; }
+  .o-block.block-2-col.colours {
+    position: relative; }
+    .o-block.block-2-col.colours .m-image-block {
+      position: absolute;
+      height: 100%;
+      left: 0;
+      display: flex; }
+      .o-block.block-2-col.colours .m-image-block:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        right: -52.5%;
+        content: ''; }
+    .o-block.block-2-col.colours .m-text-block {
+      margin: 30px;
+      margin-left: 41.666667%; } }
 
 .page.colt-1-1 .o-block.intro-block .m-text-block {
   background-color: #0D5187; }
@@ -799,9 +814,16 @@ a.a-text-link {
   background: #0D5187;
   color: #FFFFFF; }
 
+.page.colt-3-1 .no-loop-carousel .swiper-container.no-loop {
+  margin: 15px; }
+
 @media (min-width: 768px) {
   .page.colt-2-1 .o-block.block-2-col .m-text-block .m-text-wrapper {
-    padding: 0 30px; } }
+    padding: 0 30px; }
+  .page.colt-3-1 .no-loop-carousel {
+    margin-bottom: 30px; }
+    .page.colt-3-1 .no-loop-carousel .swiper-container.no-loop {
+      margin: -30px 45px 15px; } }
 
 @media (min-width: 992px) {
   .page.colt-2-1 .o-block.block-2-col .m-text-block .m-text-wrapper .a-block-title {

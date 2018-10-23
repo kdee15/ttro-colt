@@ -7,8 +7,8 @@
 // A.1.1. FEATURES CAROUSEL -------------------------------
 
 .o-block {
-  &.features-block {
-    .swiper-container { overflow-x: hidden; padding-bottom: $base-lg;
+  &.features-block { position: relative;
+    .swiper-container { overflow-x: hidden;
       .swiper-wrapper { }
     }
 
@@ -36,8 +36,8 @@
 
     }
 
-    .swiper-pagination {
-      .swiper-pagination-bullet { width: 18px; height: 6px; border-radius: 0; outline: none!important;
+    .swiper-pagination { position: relative; width: 100%; margin-bottom: $base;
+      .swiper-pagination-bullet { width: 18px; height: 6px; border-radius: 0; outline: none!important; margin: 0 3px;
         &.swiper-pagination-bullet-active { box-shadow: 0 0 6px $black; }
         &:hover { box-shadow: 0 0 6px $black; }
       }
@@ -52,40 +52,10 @@
 
 .o-block {
   &.features-block {
-    .swiper-container { overflow-x: hidden; padding-bottom: $base-lg;
+    .swiper-container {
       .swiper-wrapper { }
     }
 
-    .swiper-button {
-      @include vertical-align(absolute);
-      width: 15px;
-      height: 25px;
-      background-size: cover;
-      display: none;
-      opacity: 0.3;
-      transition: 0.2s;
-      outline: none!important;
-
-      &.swiper-button-next {
-        background-image: url('http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-right.svg'); right: 6px; left: auto;
-      }
-
-      &.swiper-button-prev {
-        background-image: url('http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-left.svg'); left: 6px; right: auto;
-      }
-
-      &:hover { opacity: 1; transition: 0.2s; width: 17px; height: 27px; }
-
-      &.swiper-button-disabled { opacity: 0; }
-
-    }
-
-    .swiper-pagination {
-      .swiper-pagination-bullet { width: 18px; height: 6px; border-radius: 0; outline: none!important;
-        &.swiper-pagination-bullet-active { box-shadow: 0 0 6px $black; }
-        &:hover { box-shadow: 0 0 6px $black; }
-      }
-    }
 
   }
 }
@@ -118,6 +88,8 @@
     &.features-block {
       .swiper-button-prev,
       .swiper-button-next { display: block; }
+
+      .swiper-pagination { margin: $base 0 $base-md; }
     }
   }
 
@@ -134,7 +106,7 @@
 @media ($md-up) {
 
   .o-block {
-    &.features-block {
+    &.features-block { padding: 0 $base-md;
       &.no-loop-carousel {
         .swiper-pagination { display: none; }
       }

@@ -26,6 +26,19 @@
         }
       }
     }
+
+    &.colours { position: relative;
+      .m-image-block { display: none;
+        &:before { background: red; }
+      }
+      .m-text-block { background: $red;
+        .m-text-wrapper { color: $white;
+          .a-block-title { text-align: left; margin: $base 0 $base-md;
+            &:before { background: $white; }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -68,6 +81,13 @@
             &:before { display: block; left: 0; }
           }
         }
+      }
+
+      &.colours { position: relative;
+        .m-image-block { position: absolute; height: 100%; left: 0; display: flex;
+          &:before { @include position(absolute, 0); right: -52.5%; content: ''; }
+        }
+        .m-text-block { margin: $base-md; margin-left: 41.666667%; }
       }
     }
   }

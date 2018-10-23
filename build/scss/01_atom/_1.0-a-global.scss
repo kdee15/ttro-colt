@@ -10,10 +10,6 @@ html, body {
 
 h3 { font-size: 21px; line-height: 34px;  }
 
-.page {
-  &.colt-sample-1 { background: $grey-28; }
-}
-
 .container { position: relative; }
 
 .o-block { background-color: $white;
@@ -40,7 +36,12 @@ figure { margin: 0; }
 
 .a-image { width: 100%; height: auto; }
 
+.a-red     { color: $red; }
+.a-blue    { color: $blue; }
+.a-white    { color: $white; }
 
+.a-bg-red     { background-color: $red; }
+.a-bg-blue    { background-color: $blue; }
 
 p { line-height: 26px; letter-spacing: 0.71px; }
 
