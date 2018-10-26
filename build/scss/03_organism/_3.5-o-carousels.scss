@@ -7,6 +7,7 @@
 // A.1.1. FEATURES CAROUSEL -------------------------------
 
 .o-block {
+  &.carousel-block,
   &.features-block { position: relative;
     .swiper-container { overflow-x: hidden;
       .swiper-wrapper { }
@@ -85,6 +86,7 @@
 @media ($sm-up) {
 
   .o-block {
+    &.carousel-block,
     &.features-block {
       .swiper-button-prev,
       .swiper-button-next { display: block; }
@@ -106,6 +108,7 @@
 @media ($md-up) {
 
   .o-block {
+    &.carousel-block,
     &.features-block { padding: 0 $base-md;
       &.no-loop-carousel {
         .swiper-pagination { display: none; }
