@@ -859,6 +859,25 @@ a.a-text-link {
   .page.colt-2-1 .o-block.block-2-col .m-text-block .m-text-wrapper p {
     line-height: 18px; } }
 
+.page.colt-2 .block-2-col .m-text-block .m-text-wrapper {
+  padding: 0; }
+  .page.colt-2 .block-2-col .m-text-block .m-text-wrapper .a-block-title {
+    text-align: left;
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 18px; }
+  .page.colt-2 .block-2-col .m-text-block .m-text-wrapper p {
+    line-height: 20px; }
+
+.page.colt-2 .block-2-col.color-block {
+  background: #0D5187;
+  color: #FFFFFF; }
+
+@media (min-width: 768px) {
+  .page.colt-2 .block-2-col .m-text-block .m-text-wrapper .a-block-title {
+    text-align: left;
+    font-size: 20px; } }
+
 .page.colt-4 .block-2-col .m-image-block .m-image:before {
   padding-top: 70%; }
 
