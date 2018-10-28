@@ -64,6 +64,10 @@ figure {
     transform: translateX(-50%);
     width: auto; }
 
+.row-flex {
+  display: flex;
+  flex-wrap: wrap; }
+
 .a-image {
   width: 100%;
   height: auto; }
@@ -665,11 +669,11 @@ a.a-text-link {
       display: block;
       left: 0; } }
 
-.o-block.features-block {
+.o-block.carousel-block, .o-block.features-block {
   position: relative; }
-  .o-block.features-block .swiper-container {
+  .o-block.carousel-block .swiper-container, .o-block.features-block .swiper-container {
     overflow-x: hidden; }
-  .o-block.features-block .swiper-button {
+  .o-block.carousel-block .swiper-button, .o-block.features-block .swiper-button {
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -682,47 +686,48 @@ a.a-text-link {
     opacity: 0.3;
     transition: 0.2s;
     outline: none !important; }
-    .o-block.features-block .swiper-button.swiper-button-next {
+    .o-block.carousel-block .swiper-button.swiper-button-next, .o-block.features-block .swiper-button.swiper-button-next {
       background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-right.svg");
       right: 6px;
       left: auto; }
-    .o-block.features-block .swiper-button.swiper-button-prev {
+    .o-block.carousel-block .swiper-button.swiper-button-prev, .o-block.features-block .swiper-button.swiper-button-prev {
       background-image: url("http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-left.svg");
       left: 6px;
       right: auto; }
-    .o-block.features-block .swiper-button:hover {
+    .o-block.carousel-block .swiper-button:hover, .o-block.features-block .swiper-button:hover {
       opacity: 1;
       transition: 0.2s;
       width: 17px;
       height: 27px; }
-    .o-block.features-block .swiper-button.swiper-button-disabled {
+    .o-block.carousel-block .swiper-button.swiper-button-disabled, .o-block.features-block .swiper-button.swiper-button-disabled {
       opacity: 0; }
-  .o-block.features-block .swiper-pagination {
+  .o-block.carousel-block .swiper-pagination, .o-block.features-block .swiper-pagination {
     position: relative;
     width: 100%;
     margin-bottom: 15px; }
-    .o-block.features-block .swiper-pagination .swiper-pagination-bullet {
+    .o-block.carousel-block .swiper-pagination .swiper-pagination-bullet, .o-block.features-block .swiper-pagination .swiper-pagination-bullet {
       width: 18px;
       height: 6px;
       border-radius: 0;
       outline: none !important;
       margin: 0 3px; }
-      .o-block.features-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      .o-block.carousel-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active, .o-block.features-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
         box-shadow: 0 0 6px #000000; }
-      .o-block.features-block .swiper-pagination .swiper-pagination-bullet:hover {
+      .o-block.carousel-block .swiper-pagination .swiper-pagination-bullet:hover, .o-block.features-block .swiper-pagination .swiper-pagination-bullet:hover {
         box-shadow: 0 0 6px #000000; }
 
 @media (min-width: 768px) {
-  .o-block.features-block .swiper-button-prev,
+  .o-block.carousel-block .swiper-button-prev,
+  .o-block.carousel-block .swiper-button-next, .o-block.features-block .swiper-button-prev,
   .o-block.features-block .swiper-button-next {
     display: block; }
-  .o-block.features-block .swiper-pagination {
+  .o-block.carousel-block .swiper-pagination, .o-block.features-block .swiper-pagination {
     margin: 15px 0 30px; } }
 
 @media (min-width: 992px) {
-  .o-block.features-block {
+  .o-block.carousel-block, .o-block.features-block {
     padding: 0 30px; }
-    .o-block.features-block.no-loop-carousel .swiper-pagination {
+    .o-block.carousel-block.no-loop-carousel .swiper-pagination, .o-block.features-block.no-loop-carousel .swiper-pagination {
       display: none; } }
 
 .o-block.block-2-col .a-block-title {
