@@ -401,6 +401,23 @@ var mySwiper = new Swiper ('.single-carousel', {
     prevEl: '.swiper-button-prev',
   }
 })
+
+var mySwiper = new Swiper ('.single-carousel-2', {
+
+  direction: 'horizontal',
+  loop: true,
+  lazy: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+})
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
