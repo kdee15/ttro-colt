@@ -29,9 +29,9 @@
 
     &.colours { position: relative;
       .m-image-block { display: none;
-        &:before { background: red; }
+        &:before { background-size: cover; }
       }
-      .m-text-block { background: $red;
+      .m-text-block {
         .m-text-wrapper { color: $white;
           .a-block-title { text-align: left; margin: $base 0 $base-md;
             &:before { background: $white; }

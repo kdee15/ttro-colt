@@ -43,10 +43,12 @@ figure { margin: 0; }
 
 .a-red     { color: $red; }
 .a-blue    { color: $blue; }
+.a-green    { color: $green; }
 .a-white    { color: $white; }
 
 .a-bg-red     { background-color: $red; }
 .a-bg-blue    { background-color: $blue; }
+.a-bg-green    { background-color: $green; }
 
 p { line-height: 26px; letter-spacing: 0.71px; }
 
@@ -74,6 +76,7 @@ a {
   &.a-text-link { font-weight: 800; color: $blue;
     &.a-white { color: $white; font-weight: 600; }
   }
+  &.a-med { font-weight: 400; }
 }
 
 

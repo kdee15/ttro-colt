@@ -78,6 +78,9 @@ figure {
 .a-blue {
   color: #0D5187; }
 
+.a-green {
+  color: #009579; }
+
 .a-white {
   color: #FFFFFF; }
 
@@ -86,6 +89,9 @@ figure {
 
 .a-bg-blue {
   background-color: #0D5187; }
+
+.a-bg-green {
+  background-color: #009579; }
 
 p {
   line-height: 26px;
@@ -175,6 +181,9 @@ a.a-text-link {
   a.a-text-link.a-white {
     color: #FFFFFF;
     font-weight: 600; }
+
+a.a-med {
+  font-weight: 400; }
 
 @media (min-width: 768px) {
   .container {
@@ -757,16 +766,14 @@ a.a-text-link {
   .o-block.block-2-col.colours .m-image-block {
     display: none; }
     .o-block.block-2-col.colours .m-image-block:before {
-      background: red; }
-  .o-block.block-2-col.colours .m-text-block {
-    background: #C33427; }
-    .o-block.block-2-col.colours .m-text-block .m-text-wrapper {
-      color: #FFFFFF; }
-      .o-block.block-2-col.colours .m-text-block .m-text-wrapper .a-block-title {
-        text-align: left;
-        margin: 15px 0 30px; }
-        .o-block.block-2-col.colours .m-text-block .m-text-wrapper .a-block-title:before {
-          background: #FFFFFF; }
+      background-size: cover; }
+  .o-block.block-2-col.colours .m-text-block .m-text-wrapper {
+    color: #FFFFFF; }
+    .o-block.block-2-col.colours .m-text-block .m-text-wrapper .a-block-title {
+      text-align: left;
+      margin: 15px 0 30px; }
+      .o-block.block-2-col.colours .m-text-block .m-text-wrapper .a-block-title:before {
+        background: #FFFFFF; }
 
 @media (min-width: 768px) {
   .o-block.block-2-col .a-block-title {
@@ -847,6 +854,24 @@ a.a-text-link {
   background: #0D5187;
   color: #FFFFFF; }
 
+.page.colt-3-1 .o-block.hero-banner.text-hero .m-image.cropped:before {
+  padding-top: 44%; }
+
+.page.colt-3-1 .o-block.hero-banner.text-hero .m-text-block {
+  min-width: 550px; }
+
+.page.colt-3-1 .o-block.features-block .o-card.reason-card {
+  background-color: #0D5187;
+  color: #FFFFFF; }
+  .page.colt-3-1 .o-block.features-block .o-card.reason-card .m-card-body {
+    margin-top: 15px; }
+
+.page.colt-3-1 .o-block.colours .m-image-block::before {
+  background-image: url("http://ttro-skeleton.co.za/colt/dist/images/content/colt-3-1/image-one.jpg"); }
+
+.page.colt-3-1 .o-block.colours .m-text-block {
+  background: #0D5187; }
+
 .page.colt-3-1 .no-loop-carousel .swiper-container.no-loop {
   margin: 15px; }
 
@@ -895,11 +920,19 @@ a.a-text-link {
     text-align: left;
     font-size: 20px; } }
 
+.page.colt-4 .hero-banner .m-image::before {
+  padding-top: 53.5%; }
+
 .page.colt-4 .block-2-col .m-image-block .m-image:before {
   padding-top: 70%; }
 
+.page.colt-4 .block-2-col.a-bg-green .m-image-block {
+  padding: 15px; }
+
 @media (min-width: 768px) {
   .page.colt-4 .block-2-col .m-image-block {
-    margin-left: 30px; } }
+    margin-left: 30px; }
+  .page.colt-4 .block-2-col.a-bg-green .m-image-block {
+    padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */
