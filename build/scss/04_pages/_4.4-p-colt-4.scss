@@ -22,6 +22,8 @@
         }
       }
 
+      .m-text-block { font-size: 16px; }
+
       &.a-bg-green {
         .m-image-block { padding: $base; }
       }
@@ -58,12 +60,12 @@
     &.colt-4 {
 
       .block-2-col {
-        .m-image-block { margin-left: $base-md;
+        .m-image-block {
           .m-image {  }
         }
 
         &.a-bg-green {
-          .m-image-block { padding: 0; }
+          .m-image-block {  }
         }
 
       }

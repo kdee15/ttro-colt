@@ -926,13 +926,10 @@ a.a-med {
 .page.colt-4 .block-2-col .m-image-block .m-image:before {
   padding-top: 70%; }
 
+.page.colt-4 .block-2-col .m-text-block {
+  font-size: 16px; }
+
 .page.colt-4 .block-2-col.a-bg-green .m-image-block {
   padding: 15px; }
-
-@media (min-width: 768px) {
-  .page.colt-4 .block-2-col .m-image-block {
-    margin-left: 30px; }
-  .page.colt-4 .block-2-col.a-bg-green .m-image-block {
-    padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */
