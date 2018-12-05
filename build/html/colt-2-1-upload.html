@@ -1,0 +1,380 @@
+<!-- A. HEADER SCRIPTS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colt Sample</title>
+        <meta name="description" content="Colt">
+        <meta name="author" content="HTML">
+        <!-- A. CSS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        -->
+        <!-- BOOTSTRAP 4 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+        <!-- DEV -->
+        <!--<link rel="stylesheet" href="../../dist/css/style.css">-->
+        <!-- PROD -->
+        <!--<link rel="stylesheet" href="http://ttro-skeleton.co.za/colt/dist/css/style.min.css">-->
+        <!-- A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        -->
+        <!-- B. HEAD JS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        -->
+        <!-- BOOTSTRAP 4 -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+        <!-- B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        -->
+    </head>
+    <!-- A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    -->
+    
+    <body class="page colt-2-1">
+        <!-- C. CONTENT +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        -->
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i);@import
+        url(https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i);body,html{font-family:Montserrat,sans-serif,cursive,arial;font-size:14px;width:100%;margin:0;padding:0;font-weight:300}h3{font-size:21px;line-height:34px}.container{position:relative}.o-block{background-color:#fff}.o-block
+        .a-block-title{font-size:22px;line-height:28px;letter-spacing:1.71px;margin-bottom:30px}figure{margin:0}.m-image.cropped{position:relative;width:100%;overflow:hidden}.m-image.cropped:before{content:"";display:block;padding-top:56%}.m-image.cropped
+        .a-image{position:absolute;top:0;right:0;bottom:0;left:0}.m-image.scalable{position:relative;width:100%;overflow:hidden;height:100%}.m-image.scalable:before{content:"";display:block;padding-top:56%}.m-image.scalable
+        .a-image{position:absolute;top:0;right:0;bottom:0;left:0;height:100%;position:absolute;left:50%;-ms-transform:translateX(-50%);-webkit-transform:translateX(-50%);transform:translateX(-50%);width:auto}.row-flex{display:flex;flex-wrap:wrap}.a-image{width:100%;height:auto}.a-red{color:#c33427}.a-blue{color:#0d5187}.a-green{color:#009579}.a-white{color:#fff}.a-bg-red{background-color:#c33427}.a-bg-blue{background-color:#0d5187}.a-bg-green{background-color:#009579}p{line-height:26px;letter-spacing:.71px}.boxed-left{display:block;padding-left:20px;border-left:2px
+        solid #fff}.boxed-top{display:block;padding-top:20px;border-top:2px solid
+        #fff}.dropshadow-right{width:calc(100% - 30px);box-shadow:15px 15px 0 #c33427;margin-bottom:45px}.a-text-accent{position:relative}.a-text-accent:before{position:absolute;top:0;left:0;height:2px;width:100px;background-color:#000;content:''}.a-accent-bottom{position:relative}.a-accent-bottom:before{content:'';display:block;height:6px;width:50px;background-color:#000;position:absolute;left:0;top:0;border-bottom-right-radius:50px;border-top-right-radius:50px}.a-accent-bottom:before{bottom:-15px;top:auto}.a-accent-bottom{position:relative}.a-accent-bottom:before{content:'';display:block;height:6px;width:50px;background-color:#000;position:absolute;left:0;top:0;border-bottom-right-radius:50px;border-top-right-radius:50px}.a-accent-bottom:before{bottom:-15px;top:auto}.a-accent-top{position:relative}.a-accent-top:before{content:'';display:block;height:6px;width:50px;background-color:#000;position:absolute;left:0;top:0;border-bottom-right-radius:50px;border-top-right-radius:50px}.a-accent-top:before{top:10px;left:15px;bottom:auto}a.a-text-link{font-weight:800;color:#0d5187}a.a-text-link.a-white{color:#fff;font-weight:600}a.a-med{font-weight:400}@media
+        (min-width:768px){.container{max-width:980px}.o-block .a-block-title{font-size:36px;line-height:38px}.a-accent-top:before{top:0;left:0;bottom:auto}}.a-icon{width:30px;height:30px;display:block;margin:5px
+        auto}.a-icon.close{background:url(../images/icons/icon--close.svg) center
+        center no-repeat}.close{position:absolute;top:-15px;right:-15px;border:2px
+        solid #ccc;background-color:#f2f2f2;border-radius:50px;z-index:10000;opacity:1}.close:hover{opacity:1}.btn-default{border:2px
+        solid #5e5e5e;padding:8px 30px;max-width:200px;display:block;margin:20px
+        auto 0;text-align:center;font-size:22px;font-family:Montserrat,sans-serif}.btn-default:hover{text-decoration:none;cursor:pointer}.submit#submit{border:2px
+        solid #5e5e5e;padding:8px;max-width:200px;display:inline-block;margin:0
+        auto;text-align:center;font-size:16px;font-family:Montserrat,sans-serif;background:#fff}.submit#submit:hover{text-decoration:none;cursor:pointer;background:#f4f4f4}.btn-thin:hover{text-decoration:none;cursor:pointer}.a-btn{display:inline-block;padding:9px
+        20px;margin:0 12px;font-family:arial;font-weight:700;font-size:14px;line-height:20px;text-align:center;text-transform:uppercase;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px
+        solid transparent;border-radius:0;color:#ccc;background-color:transparent;border-color:#ccc;text-rendering:optimizeLegibility;outline:0;min-width:200px}.a-btn:first-child{margin-left:0}.a-btn:last-child{margin-right:0}.a-btn.active,.a-btn.focus,.a-btn:focus,.a-btn:hover{color:#fff;background-color:#ccc;border-color:#ccc;outline:0}.a-btn.active.focus,.a-btn.active:focus,.a-btn.focus,.a-btn:active.focus,.a-btn:active:focus,.a-btn:focus{outline:0}.a-btn.light-text{font-weight:400}.a-btn.medium-text{font-weight:600}.a-btn.heavy-text{font-weight:900}.a-btn.normal-text{text-transform:none}.a-btn.thick-border{border-width:2px;padding:8px
+        20px}.a-btn.block{display:block;width:100%}.a-btn.btn-hollow{color:#282828;background-color:transparent;border-color:#282828}.a-btn.btn-hollow.active,.a-btn.btn-hollow.focus,.a-btn.btn-hollow:focus,.a-btn.btn-hollow:hover{color:#fff;background-color:#ccc;border-color:#ccc}.a-btn.btn-orange{color:#fff;background-color:#ccc;border-color:#ccc}.a-btn.btn-orange.active,.a-btn.btn-orange.focus,.a-btn.btn-orange:focus,.a-btn.btn-orange:hover{color:#fff;background-color:#ccc;border-color:#ccc}.a-btn.btn-white{color:#ccc;background-color:#fff;border-color:#fff}.a-btn.btn-white.active,.a-btn.btn-white.focus,.a-btn.btn-white:focus,.a-btn.btn-white:hover{color:#fff;background-color:#ccc;border-color:#ccc}.a-btn.btn-white-hollow{color:#fff;background-color:transparent;border-color:#fff}.a-btn.btn-white-hollow.active,.a-btn.btn-white-hollow.focus,.a-btn.btn-white-hollow:focus,.a-btn.btn-white-hollow:hover{color:#ccc;background-color:#fff;border-color:#fff}.a-btn.max-width-200{max-width:220px;display:block;margin:0
+        auto}.a-btn.on{position:relative}.a-btn.on:after{content:'';outline:0;width:0;height:0;border-left:30px
+        solid transparent;border-right:30px solid transparent;border-bottom:30px
+        solid #f2f2f2;position:absolute;bottom:-52px;left:50%;transform:translateX(-50%)}.text-link{color:#282828}.text-link:hover{color:#808ba1}.btn-back{display:block;position:relative;font-size:14px;line-height:24px;color:#ccc}.btn-back.btn-left{padding-left:34px;float:left}.btn-back.btn-left
+        .btn-glyph-wrap{left:0}.btn-back .btn-glyph-wrap{display:block;position:absolute;top:-2px;border:1px
+        solid #ccc;width:24px;height:24px;text-align:center;border-radius:0}.btn-back
+        .btn-glyph-wrap .glyphicon-menu-left{top:3px}.btn-fwd{display:block;position:relative;font-size:14px;line-height:24px;color:#ccc}.btn-fwd.btn-right{padding-right:34px;float:right}.btn-fwd.btn-right
+        .btn-glyph-wrap{right:0}.btn-fwd .btn-glyph-wrap{display:block;position:absolute;top:-2px;border:1px
+        solid #ccc;width:24px;height:24px;text-align:center;border-radius:0}.btn-fwd
+        .btn-glyph-wrap .glyphicon-menu-right{top:3px}@media (max-width:767px){.btn{display:block;white-space:normal;margin-left:0;margin-right:0;margin-bottom:24px;border-radius:0}}.m-text-block.centered-block{padding:30px
+        15px;margin:15px auto 45px;font-weight:400}@media (min-width:768px){.m-text-block.centered-block{margin:45px
+        auto;padding:30px 0;max-width:500px}}.m-video.scalable{position:relative;width:100%}.m-video.scalable:before{content:"";display:block;padding-top:56%}.m-video.scalable
+        video{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%}.o-header{width:100%;text-align:right;position:absolute;right:15px;top:0}.o-header
+        .m-logo{width:102px;height:102px;position:relative;display:inline-block;background:#c33427}.o-header
+        .m-logo img{position:absolute;top:50%;left:50%;-ms-transform:translateX(-50%)
+        translateY(-50%);-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%)
+        translateY(-50%);width:68px;height:auto}.o-block.hero-banner .m-image.cropped:before{padding-top:53%}.o-block.hero-banner.text-hero{position:relative}.o-block.hero-banner.text-hero
+        .m-image.cropped{position:absolute;width:100%;height:100%}.o-block.hero-banner.text-hero
+        .m-image.cropped:before{padding-top:0}.o-block.hero-banner.text-hero .m-image.cropped
+        .a-image{position:absolute;left:50%;-ms-transform:translateX(-50%);-webkit-transform:translateX(-50%);transform:translateX(-50%);height:100%;width:auto}.o-block.hero-banner.text-hero
+        .m-text-block{position:relative;margin:60px 15px 15px}.o-block.hero-banner.text-hero
+        .m-text-block .m-text-wrapper{color:#fff}.o-block.hero-banner.text-hero
+        .m-text-block .m-text-wrapper .a-accent-bottom:before{background-color:#fff}.o-block.hero-banner.mobile{min-height:400px}.o-block.hero-banner.mobile
+        .m-image .a-image{width:auto;height:100%;position:absolute;top:50%;left:50%;-ms-transform:translateX(-50%)
+        translateY(-50%);-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%)
+        translateY(-50%)}.o-block.image-block .m-image.cropped:before{padding-top:51.8%}@media
+        (max-width:575px){.o-block.hero-banner{min-height:400px}}@media (min-width:576px){.o-block.hero-banner.text-hero
+        .m-image.cropped .a-image{height:auto;width:100%}}@media (min-width:768px){.o-block.hero-banner.text-hero
+        .m-image.cropped{position:relative;height:auto}.o-block.hero-banner.text-hero
+        .m-image.cropped:before{padding-top:53%}.o-block.hero-banner.text-hero
+        .m-image.cropped .a-image{position:absolute;left:50%;-ms-transform:translateX(-50%);-webkit-transform:translateX(-50%);transform:translateX(-50%);height:auto;width:100%}.o-block.hero-banner.text-hero
+        .m-text-block{margin:0;position:absolute;top:50%;left:50%;-ms-transform:translateX(-50%)
+        translateY(-50%);-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%)
+        translateY(-50%);max-width:500px}}.o-block.intro-block{position:relative;z-index:10}.o-block.intro-block
+        .m-text-block{padding:30px;color:#fff}.o-block.intro-block .m-text-block
+        .a-block-title{text-transform:uppercase}.o-block.intro-block .m-text-block
+        .a-block-subheading{font-size:16px;line-height:19px;letter-spacing:1.01px;margin:0
+        30px 30px 0}.o-block.intro-block .m-text-block .a-block-text{font-size:16px;line-height:26px;letter-spacing:.71px;margin-bottom:10px}.o-block.intro-block
+        .m-text-block .a-block-text.boxed-top{border-width:1px}.o-block.intro-block
+        .m-image-block{padding:30px;background-color:#fff;width:100%}.o-block.intro-block
+        .m-image-block .m-image.cropped{height:100%}.o-block.intro-block .m-image-block
+        .m-image.cropped:before{padding-top:85%}.o-block.intro-block .m-image-block
+        .m-image.cropped .a-image{height:100%;width:auto;position:absolute;left:50%;-ms-transform:translateX(-50%);-webkit-transform:translateX(-50%);transform:translateX(-50%)}@media
+        (min-width:768px){.o-block.intro-block{padding-bottom:50px}.o-block.intro-block
+        .m-text-block{width:55%;margin-top:-130px}.o-block.intro-block .m-image-block{width:45%;padding-right:0;padding-bottom:0}.o-block.intro-block
+        .m-image-block .m-image{margin:0}}.card{border:0;border-radius:0}.card
+        .o-card .m-card-title{font-size:16px;letter-spacing:1.01px;line-height:16px;margin-bottom:30px;font-weight:700}.card
+        .o-card .m-card-body .a-card-text{font-weight:400;font-size:14px;line-height:18px}.card
+        .o-card.reason-card{background-color:#f2f2f2;height:100%;text-align:left}.card
+        .o-card.reason-card .m-card-title{margin:30px;margin-bottom:15px;padding-bottom:15px;border-bottom:1px
+        solid #000;text-transform:uppercase}.card .o-card.reason-card .m-card-title.no-border{border-bottom:0;margin-bottom:0}.card
+        .o-card.reason-card .m-card-body{margin:0 30px 15px}.o-block.reasons-block{margin-left:-15px;margin-right:-15px}.o-block.reasons-block
+        .card .reason-card{margin:5px 20px}@media (min-width:768px){.o-block.reasons-block{margin-left:-15px;margin-right:-15px}.o-block.reasons-block
+        .card .reason-card{margin:0 3px}.o-block.reasons-block .card .reason-card
+        .m-card-body{margin-bottom:15px}.o-block.reasons-block .card:first-child
+        .reason-card{margin-left:0;margin-right:6px}.o-block.reasons-block .card:last-child
+        .reason-card{margin-left:6px;margin-right:0}}.o-block.boost-block .a-block-title{text-align:center;width:100%;padding:20px
+        0 0}.o-block.boost-block .m-image-block{padding:0}.o-block.boost-block
+        .m-text-block .m-text-wrapper{display:block;padding-top:30px}.o-block.boost-block
+        .m-text-block .m-text-wrapper.a-text-accent:before{left:30px;display:none}.o-block.boost-block
+        .m-text-block.footer-block{padding:30px 15px;margin:15px auto 45px;font-weight:300}.o-block.boost-block
+        .m-text-block.footer-block.a-text-accent:before{left:15px}@media (min-width:768px){.o-block.boost-block
+        .a-block-title{margin:45px auto;padding:0}.o-block.boost-block .m-text-block
+        .m-text-wrapper{padding:30px}.o-block.boost-block .m-text-block .m-text-wrapper.a-text-accent:before{display:block}.o-block.boost-block
+        .m-text-block.footer-block{margin:45px auto;padding:30px 0;max-width:500px}.o-block.boost-block
+        .m-text-block.footer-block.a-text-accent:before{display:block;left:0}}.o-block.carousel-block,.o-block.features-block{position:relative}.o-block.carousel-block
+        .swiper-container,.o-block.features-block .swiper-container{overflow-x:hidden}.o-block.carousel-block
+        .swiper-button,.o-block.features-block .swiper-button{position:absolute;top:50%;-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);transform:translateY(-50%);width:15px;height:25px;background-size:cover;display:none;opacity:.3;transition:.2s;outline:0!important}.o-block.carousel-block
+        .swiper-button.swiper-button-next,.o-block.features-block .swiper-button.swiper-button-next{background-image:url(http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-right.svg);right:6px;left:auto}.o-block.carousel-block
+        .swiper-button.swiper-button-prev,.o-block.features-block .swiper-button.swiper-button-prev{background-image:url(http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-left.svg);left:6px;right:auto}.o-block.carousel-block
+        .swiper-button:hover,.o-block.features-block .swiper-button:hover{opacity:1;transition:.2s;width:17px;height:27px}.o-block.carousel-block
+        .swiper-button.swiper-button-disabled,.o-block.features-block .swiper-button.swiper-button-disabled{opacity:0}.o-block.carousel-block
+        .swiper-pagination,.o-block.features-block .swiper-pagination{position:relative;width:100%;margin-bottom:15px}.o-block.carousel-block
+        .swiper-pagination .swiper-pagination-bullet,.o-block.features-block .swiper-pagination
+        .swiper-pagination-bullet{width:18px;height:6px;border-radius:0;outline:0!important;margin:0
+        3px}.o-block.carousel-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,.o-block.features-block
+        .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{box-shadow:0
+        0 6px #000}.o-block.carousel-block .swiper-pagination .swiper-pagination-bullet:hover,.o-block.features-block
+        .swiper-pagination .swiper-pagination-bullet:hover{box-shadow:0 0 6px #000}@media
+        (min-width:768px){.o-block.carousel-block .swiper-button-next,.o-block.carousel-block
+        .swiper-button-prev,.o-block.features-block .swiper-button-next,.o-block.features-block
+        .swiper-button-prev{display:block}.o-block.carousel-block .swiper-pagination,.o-block.features-block
+        .swiper-pagination{margin:15px 0 30px}}@media (min-width:992px){.o-block.carousel-block,.o-block.features-block{padding:0
+        30px}.o-block.carousel-block.no-loop-carousel .swiper-pagination,.o-block.features-block.no-loop-carousel
+        .swiper-pagination{display:none}}.o-block.block-2-col .a-block-title{text-align:center;width:100%;padding:20px
+        0 0}.o-block.block-2-col .m-image-block{padding:0}.o-block.block-2-col
+        .m-text-block .m-text-wrapper{display:block;padding-top:30px}.o-block.block-2-col
+        .m-text-block .m-text-wrapper.a-text-accent:before{left:30px;display:none}.o-block.block-2-col
+        .m-text-block.footer-block{padding:30px 15px;margin:15px auto 45px;font-weight:300}.o-block.block-2-col
+        .m-text-block.footer-block.a-text-accent:before{left:15px}.o-block.block-2-col.colours{position:relative}.o-block.block-2-col.colours
+        .m-image-block{display:none}.o-block.block-2-col.colours .m-image-block:before{background-size:cover}.o-block.block-2-col.colours
+        .m-text-block .m-text-wrapper{color:#fff}.o-block.block-2-col.colours .m-text-block
+        .m-text-wrapper .a-block-title{text-align:left;margin:15px 0 30px}.o-block.block-2-col.colours
+        .m-text-block .m-text-wrapper .a-block-title:before{background:#fff}@media
+        (min-width:768px){.o-block.block-2-col .a-block-title{margin:45px auto;padding:0}.o-block.block-2-col
+        .m-text-block .m-text-wrapper{padding:30px}.o-block.block-2-col .m-text-block
+        .m-text-wrapper.a-text-accent:before{display:block}.o-block.block-2-col
+        .m-text-block.footer-block{margin:45px auto;padding:30px 0;max-width:500px}.o-block.block-2-col
+        .m-text-block.footer-block.a-text-accent:before{display:block;left:0}.o-block.block-2-col.colours{position:relative}.o-block.block-2-col.colours
+        .m-image-block{position:absolute;height:100%;left:0;display:flex}.o-block.block-2-col.colours
+        .m-image-block:before{position:absolute;top:0;right:0;bottom:0;left:0;right:-52.5%;content:''}.o-block.block-2-col.colours
+        .m-text-block{margin:30px;margin-left:41.666667%}}.page.colt-1-1 .o-block.intro-block
+        .m-text-block{background-color:#0d5187}.page.colt-1-1 .o-block.features-block
+        .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{background:#0d5187}.page.colt-1-1
+        a.a-text-link{color:#0d5187}.page.colt-1-2 .o-block.intro-block .m-text-block{background-color:#c33427}.page.colt-1-2
+        .o-block.features-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{background:#c33427}.page.colt-1-2
+        .o-block.block-2-col-1{margin-top:60px;margin-bottom:60px}.page.colt-1-2
+        a.a-text-link{color:#c33427}.page.colt-1-3 .o-block.intro-block .m-text-block{background-color:#c33427}.page.colt-1-3
+        .o-block.features-block .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{background:#c33427}.page.colt-1-3
+        a.a-text-link{color:#c33427}.page.colt-2-1 .o-block.block-2-col .m-text-block
+        .m-text-wrapper{padding:0}.page.colt-2-1 .o-block.block-2-col .m-text-block
+        .m-text-wrapper .a-block-title{text-align:left;margin:0 0 15px 0;font-size:14px;line-height:18px}.page.colt-2-1
+        .o-block.block-2-col .m-text-block .m-text-wrapper p{line-height:20px}.page.colt-2-1
+        .o-block.block-2-col.color-block{background:#0d5187;color:#fff}.page.colt-3-1
+        .o-block.hero-banner.text-hero .m-image.cropped:before{padding-top:44%}.page.colt-3-1
+        .o-block.hero-banner.text-hero .m-text-block{min-width:550px}.page.colt-3-1
+        .o-block.features-block .o-card.reason-card{background-color:#0d5187;color:#fff}.page.colt-3-1
+        .o-block.features-block .o-card.reason-card .m-card-body{margin-top:15px}.page.colt-3-1
+        .o-block.colours .m-image-block::before{background-image:url(http://ttro-skeleton.co.za/colt/dist/images/content/colt-3-1/image-one.jpg)}.page.colt-3-1
+        .o-block.colours .m-text-block{background:#0d5187}.page.colt-3-1 .no-loop-carousel
+        .swiper-container.no-loop{margin:15px}.page.colt-5-1 .block-2-col .m-image-block
+        .m-image:before{padding-top:130%}.page.colt-5-1 .block-2-col .m-image-block
+        .m-image.dropshadow-right{box-shadow:15px 15px 0 #0d5187}@media (min-width:768px){.page.colt-2-1
+        .o-block.block-2-col .m-text-block .m-text-wrapper{padding:0 30px}.page.colt-3-1
+        .no-loop-carousel{margin-bottom:30px}.page.colt-3-1 .no-loop-carousel .swiper-container.no-loop{margin:-30px
+        45px 15px}.page.colt-2-4 .block-2-col .m-image-block .m-image:before{padding-top:100%}}@media
+        (min-width:992px){.page.colt-2-1 .o-block.block-2-col .m-text-block .m-text-wrapper
+        .a-block-title{font-size:16px}.page.colt-2-1 .o-block.block-2-col .m-text-block
+        .m-text-wrapper p{line-height:18px}.page.colt-2-4 .block-2-col .m-image-block
+        .m-image:before{padding-top:56%}.page.colt-2-4 .block-2-col .m-text-wrapper
+        p{line-height:normal}}.page.colt-2 .block-2-col .m-text-block .m-text-wrapper{padding:0}.page.colt-2
+        .block-2-col .m-text-block .m-text-wrapper .a-block-title{text-align:left;margin:0
+        0 15px 0;font-size:14px;line-height:18px}.page.colt-2 .block-2-col .m-text-block
+        .m-text-wrapper p{line-height:20px}.page.colt-2 .block-2-col.color-block{background:#0d5187;color:#fff}@media
+        (min-width:768px){.page.colt-2 .block-2-col .m-text-block .m-text-wrapper
+        .a-block-title{text-align:left;font-size:20px}}.page.colt-4 .hero-banner
+        .m-image::before{padding-top:53.5%}.page.colt-4 .block-2-col .m-image-block
+        .m-image:before{padding-top:70%}.page.colt-4 .block-2-col.a-bg-green .m-image-block{padding:15px}@media
+        (min-width:768px){.page.colt-4 .block-2-col .m-image-block{margin-left:30px}.page.colt-4
+        .block-2-col.a-bg-green .m-image-block{padding:0}}
+        </style>
+        <div class="container">
+            <!-- C.2. HERO BANNER --------------------------- -->
+            <section class="o-block hero-banner text-hero row">
+                <figure class="m-image cropped">
+                    <img class="a-image" src="http://ttro-skeleton.co.za/colt/dist/images/content/colt-2-1/top-hero-image.jpg"
+                    alt="hero" />
+                </figure>
+                <aside class="m-text-block"> <span class="m-text-wrapper">
+      <h1 class="a-block-title a-accent-bottom">I'M A COLTIE, NOW WHAT?</h1>
+      <p>
+        You had the interview; you got the job. Now it’s your first day at Colt. A million questions run through your mind. Will I make it? Will I be successful? What first impression will I give to my new colleagues?
+      </p>
+    </span>
+
+                </aside>
+            </section>
+            <!-- C.2. END ----------------------------------- -->
+            <!-- C.4. 1 COLUMN BLOCK ------------------------ -->
+            <section class="o-block block-1-col row">
+                <div class="m-text-block centered-block">
+                     <h3 class="a-block-title a-accent-bottom">CONGRATULATIONS!</h3>
+
+                    <p class="p-0 pb-3 m-0">The first day at a new job can be difficult, and you have to find ways
+                        to fit in quickly. Making a good impression is important. These practical
+                        steps and tips are here to help you through the first week of your Colt
+                        career. Use them and be surprised at the ease of your transition!</p>
+                </div>
+            </section>
+            <!-- C.4. END ----------------------------------- -->
+            <!-- C.6. 2 COLUMN BLOCK ------------------------ -->
+            <section class="o-block block-2-col row align-items-center">
+                <aside class="m-image-block col-12 col-md-6">
+                    <figure class="m-image scalable">
+                        <img class="a-image" src="http://ttro-skeleton.co.za/colt/dist/images/content/colt-2-1/image-one.jpg"
+                        alt="challenges" />
+                    </figure>
+                </aside>
+                <aside class="m-text-block col-12 col-md-6"> <span class="m-text-wrapper">
+      <h3 class="a-block-title">YOUR FIRST WEEK</h3>
+      <p>
+        This week, try to balance the pressure and anxiety. It’s super exciting, although sometimes overwhelming, to meet your new colleagues, learn your new role, and find your way around the office. But, don’t sweat the small stuff and try to take in as much as you possibly can.
+      </p>
+    </span>
+
+                </aside>
+            </section>
+            <!-- C.6. END ----------------------------------- -->
+            <!-- C.5. 2 COLUMN BLOCK ------------------------ -->
+            <section class="o-block block-2-col color-block row align-items-center">
+                <aside class="m-image-block col-12 col-md-6 order-1 order-md-2 d-none d-md-flex">
+                    <figure class="m-image scalable"></figure>
+                </aside>
+                <aside class="m-text-block col-12 col-md-6 order-2 order-md-1"> <span class="m-text-wrapper">
+      <h3 class="a-block-title pt-4">REMEMBER YOUR COLLEAGUES' NAMES</h3>
+    <p>
+      We’ve all done this – we meet someone new, and immediately forget their name. According to Forbes, there’s a simple trick to avoid this: Meet and Repeat. When someone says their name, repeat it back to them.
+    </p>
+    <p><a class="a-text-link a-white" target="_blank" href="https://www.forbes.com/sites/work-in-progress/2013/08/21/the-best-five-tricks-to-remember-names/#64cee557501f">Click here</a> for some awesome memory tips.</p>
+    </span>
+
+                </aside>
+            </section>
+            <!-- C.6. END ----------------------------------- -->
+            <!-- C.4. 2 COLUMN BLOCK ------------------------ -->
+            <section class="o-block block-2-col row align-items-center">
+                <aside class="m-image-block col-12 col-md-6">
+                    <figure class="m-image scalable">
+                        <img class="a-image" src="http://ttro-skeleton.co.za/colt/dist/images/content/colt-2-1/image-two.jpg"
+                        alt="challenges" />
+                    </figure>
+                </aside>
+                <aside class="m-text-block col-12 col-md-6"> <span class="m-text-wrapper">
+      <h3 class="a-block-title">ASK QUESTIONS</h3>
+      <p>
+        … And lots of them. Ask your Line Manager, colleagues, or anyone else that can help you. You’ll not only get to know people better, but the more you learn, the sooner you’ll be familiar with things. Do this, and you’ll be running like a Coltie in no time.
+      </p>
+    </span>
+
+                </aside>
+            </section>
+            <!-- C.6. END ----------------------------------- -->
+            <!-- C.4. 2 COLUMN BLOCK ------------------------ -->
+            <section class="o-block block-2-col row align-items-center">
+                <aside class="m-image-block col-12 col-md-6 order-1 order-md-2">
+                    <figure class="m-image scalable">
+                        <img class="a-image" src="http://ttro-skeleton.co.za/colt/dist/images/content/colt-2-1/image-three.jpg"
+                        alt="challenges" />
+                    </figure>
+                </aside>
+                <aside class="m-text-block col-12 col-md-6 order-2 order-md-1"> <span class="m-text-wrapper">
+      <h3 class="a-block-title">GET TO KNOW YOUR COLT BUDDY</h3>
+      <p>
+        We give you a built-in colleague on your first day. They’re there for you, whatever you need. They have the knowledge to assist, guide and encourage you.
+      </p>
+    </span>
+
+                </aside>
+            </section>
+            <!-- C.6. END ----------------------------------- -->
+            <!-- C.5. 2 COLUMN BLOCK ------------------------ -->
+            <section class="o-block block-2-col color-block row align-items-center">
+                <aside class="m-image-block col-12 col-md-6 order-1 order-md-2 d-none d-md-flex">
+                    <figure class="m-image scalable"></figure>
+                </aside>
+                <aside class="m-text-block col-12 col-md-6 order-2 order-md-1"> <span class="m-text-wrapper">
+      <h3 class="a-block-title">MAKE CONNECTIONS</h3>
+    <p>
+      This helps you to feel like you belong. Also consider offering to get coffee or tea on behalf of a colleague or your Line Manager. Use this as a chance to show them that you are part of the team.
+</p>
+    </span>
+
+                </aside>
+            </section>
+            <!-- C.6. END ----------------------------------- -->
+            <!-- C.4. 2 COLUMN BLOCK ------------------------ -->
+            <section class="o-block block-2-col row align-items-center">
+                <aside class="m-image-block col-12 col-md-6 order-1 order-md-2">
+                    <figure class="m-image scalable">
+                        <img class="a-image" src="http://ttro-skeleton.co.za/colt/dist/images/content/colt-2-1/image-four.jpg"
+                        alt="challenges" />
+                    </figure>
+                </aside>
+                <aside class="m-text-block col-12 col-md-6 order-2 order-md-1"> <span class="m-text-wrapper">
+      <p>
+        Remember, you are not alone in your first week. HR is there to support you while you’re getting to know your colleagues, let them answer any questions you have and introduce you to the right people.
+      </p>
+      <p>
+        Make use of this Colt Excel platform to interact with other New Joiners and share your experiences. We are all here to help you have the smoothest transition and to become a happy, successful Coltie!
+      </p>
+    </span>
+
+                </aside>
+            </section>
+            <!-- C.6. END ----------------------------------- -->
+        </div>
+        <!-- C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        -->
+        <!-- D. FOOTER SCRIPTS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        -->
+        <script>
+            jQuery(document).ready(function(e){function a(){e(".o-modal-full").removeClass("on"),e("body").removeClass("modal-open")}function
+        s(a){e("#"+a).addClass("on"),e("body").addClass("modal-open")}function
+        a(){e(".toggle-content").removeClass("on"),e("body").removeClass("modal-open")}function
+        o(a){e("#"+a).addClass("on"),e("body").addClass("modal-open")}!function(e){"use
+        strict";var a=function(e,s){var o=a.cache[e];return s?o(s,a):function(e){return
+        o(e,a)}};a.cache={},a.encReg=/[
+        <>&"'\x00]/g,a.encMap={"
+            < ":"&lt; ",">":"&gt;","&":"&amp;",'"':"&quot;","'":"&#39;"},a.encode=function(e){return(null==e?"":""+e).replace(a.encReg,function(e){return
+                a.encMap[e]||""})},"function"==typeof define&&define.amd?define(function(){return
+                a}):"object"==typeof module&&module.exports?module.exports=a:e.tmpl=a}(this);var
+                n=navigator.userAgent.toLowerCase();e("html").addClass("desktop"),n.match(/(iphone|ipod|ipad)/)&&(e("html").removeClass("desktop"),e("html").addClass("ios"),e("html").addClass("mobile")),n.match(/android/)&&(e("html").removeClass("desktop"),e("html").addClass("android"),e("html").addClass("mobile")),n.match(/blackberry/)&&(e("html").removeClass("desktop"),e("html").addClass("blackberry"),e("html").addClass("mobile")),n.match(/(symbianos|^sonyericsson|^nokia|^samsung|^lg)/)&&(e("html").removeClass("desktop"),e("html").addClass("mobile")),e(".reveal").click(function(a){var
+                s=e(this).attr("href");e(s).hasClass("hidden")?(e(s).removeClass("hidden"),e(".reveal").addClass("close")):(e(s).addClass("hidden"),e(".reveal").removeClass("close")),a.preventDefault()}),e(".c-hamburger").click(function(a){var
+                s=e(this).attr("href");e(s).hasClass("hidden")?(e(s).removeClass("hidden"),e(".c-hamburger").addClass("is-active"),e("body").addClass("fixed")):(e(s).addClass("hidden"),e(".c-hamburger").removeClass("is-active"),e("body").removeClass("fixed")),a.preventDefault()});var
+                i="";e(".modal-open").on("click",function(){i=e(this).attr("name"),e("#"+i).hasClass("on")?(e("#"+i).removeClass("on"),e("body").removeClass("modal-open")):(a(),s(i))});var
+                t=e(window).width();console.log("I am a device, and my width is: "+t),e(".showhide").click(function(a){var
+                s=e(this).attr("href");e(s).hasClass("hidden")?(e(s).removeClass("hidden"),e(".showhide").addClass("close")):(e(s).addClass("hidden"),e(".showhide").removeClass("close")),a.preventDefault()});var
+                l="";e(".toggle-div").on("click",function(){l=e(this).attr("name"),e("#"+l).hasClass("on")?(e("#"+l).removeClass("on"),e("body").removeClass("modal-open")):(a(),o(l))}),function(e){e("html").hasClass("mobile")&&e(".a-config").on("click",function(){e(".a-config").hasClass("active")?(e(".a-config").removeClass("active"),e("body").removeClass("fixed")):(e(".a-config").addClass("active"),e("body").addClass("fixed"))})}(jQuery);var
+                r;new Swiper(".features-carousel",{direction:"horizontal",loop:!0,slidesPerView:3,spaceBetween:15,pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{992:{slidesPerView:3,spaceBetween:10},768:{slidesPerView:2,spaceBetween:5},575:{slidesPerView:1,spaceBetween:0}}}),new
+                Swiper(".no-loop",{direction:"horizontal",loop:!1,slidesPerView:3,spaceBetween:15,noSwiping:!0,pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{992:{slidesPerView:3,spaceBetween:10,noSwiping:!0},768:{slidesPerView:2,spaceBetween:5,loop:!0,noSwiping:!1},575:{slidesPerView:1,spaceBetween:0,loop:!0,noSwiping:!1}}}),new
+                Swiper(".images-carousel",{direction:"horizontal",loop:!0,lazy:!0,slidesPerView:2,spaceBetween:0,pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{768:{slidesPerView:2,spaceBetween:0},575:{slidesPerView:1,spaceBetween:0}}});r=function(a){var
+                s,o=0,n=0,i=0,t=0,l=[];e(a).each(function(){if(s=e(this),e(s).height("auto"),i=s.position().top,n!=i){for(t=0;t
+                <l.length;t++)l[t].height(o);l.length=0,n=i,o=s.height(),l.push(s)}else
+                l.push(s),o=o<s.height()?s.height():o;for(t=0;t<l.length;t++)l[t].height(o)})},e(document).ready(function(){r(
+                ".features-block .reason-card .m-card-title"),r( ".features-block .reason-card .m-card-body"),e(window).width()>=767&&(r(".reasons-block .reason-card .m-card-title"),r(".reasons-block
+                    .reason-card .m-card-body"))}),e(window).resize(function(){r(".features-block
+                    .reason-card .m-card-title"),r(".features-block .reason-card .m-card-body"),e(window).width()>=767&&(r(".reasons-block
+                    .reason-card .m-card-title"),r(".reasons-block .reason-card .m-card-body"))})});
+        </script>
+        <!-- D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        -->
+    </body>
+
+</html>

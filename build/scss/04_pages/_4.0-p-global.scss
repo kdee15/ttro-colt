@@ -81,7 +81,6 @@
 
   }
 
-
   &.colt-2-1 {
 
     .o-block {
@@ -98,6 +97,35 @@
   }
 
   &.colt-3-1 {
+    .o-block {
+      &.hero-banner {
+        &.text-hero {
+          .m-image {
+            &.cropped {
+              &:before { padding-top: 44%; }
+            }
+          }
+          .m-text-block { min-width: 550px; }
+        }
+      }
+      &.features-block {
+        .o-card {
+          &.reason-card {
+            background-color: $blue; color: $white;
+            .m-card-body { margin-top: $base; }
+          }
+        }
+      }
+      &.colours {
+        .m-image-block {
+          &::before {
+            background-image: url('http://ttro-skeleton.co.za/colt/dist/images/content/colt-3-1/image-one.jpg');
+          }
+        }
+        .m-text-block { background: $blue; }
+      }
+    }
+
     .no-loop-carousel {
       .swiper-container {
         &.no-loop { margin: $base; }
@@ -110,6 +138,18 @@
 
     }
   }
+
+  &.colt-5-1 {
+    .block-2-col {
+      .m-image-block {
+        .m-image {
+          &:before { padding-top: 130%; }
+          &.dropshadow-right {  box-shadow: 15px 15px 0 $blue; }
+        }
+      }
+    }
+  }
+
 
 }
 
@@ -152,6 +192,16 @@
       }
     }
 
+    &.colt-2-4 {
+      .block-2-col {
+        .m-image-block {
+          .m-image {
+            &:before { padding-top: 100%; }
+          }
+        }
+      }
+    }
+
   }
 
 }
@@ -163,8 +213,8 @@
 @media ($md-up) {
 
   .page {
-    &.colt-2-1 {
 
+    &.colt-2-1 {
       .o-block {
         &.block-2-col {
           .m-text-block {
@@ -176,6 +226,20 @@
         }
       }
     }
+
+    &.colt-2-4 {
+      .block-2-col {
+        .m-image-block {
+          .m-image {
+            &:before { padding-top: 56%; }
+          }
+        }
+        .m-text-wrapper {
+          p { line-height: normal; }
+        }
+      }
+    }
+
   }
 
 }
