@@ -18,16 +18,20 @@
       width: 15px;
       height: 25px;
       background-size: cover;
+      background-position: center;
       display: none;
       opacity: 0.3;
       transition: 0.2s;
       outline: none!important;
+      cursor: pointer;
 
-      &.swiper-button-next {
+      &.swiper-button-next,
+      &.swiper-button-next-2 {
         background-image: url('http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-right.svg'); right: 6px; left: auto;
       }
 
-      &.swiper-button-prev {
+      &.swiper-button-prev,
+      &.swiper-button-prev-2 {
         background-image: url('http://ttro-skeleton.co.za/colt/dist/images/site/button--arrow-left.svg'); left: 6px; right: auto;
       }
 
@@ -37,7 +41,8 @@
 
     }
 
-    .swiper-pagination { position: relative; width: 100%; margin-bottom: $base;
+    .swiper-pagination,
+    .swiper-pagination-2 { position: relative; width: 100%; margin-bottom: $base; text-align: center;
       .swiper-pagination-bullet { width: 18px; height: 6px; border-radius: 0; outline: none!important; margin: 0 3px;
         &.swiper-pagination-bullet-active { box-shadow: 0 0 6px $black; }
         &:hover { box-shadow: 0 0 6px $black; }
@@ -89,10 +94,15 @@
     &.carousel-block,
     &.features-block {
       .swiper-button-prev,
-      .swiper-button-next { display: block; }
+      .swiper-button-next,
+      .swiper-button-prev-2,
+      .swiper-button-next-2 { display: block; }
 
-      .swiper-pagination { margin: $base 0 $base-md; }
+      .swiper-pagination, .swiper-pagination-2 { margin: $base 0 $base-md; }
     }
+
+    .tips-carousel { margin: 0 25px; }
+
   }
 
 }
@@ -111,9 +121,12 @@
     &.carousel-block,
     &.features-block { padding: 0 $base-md;
       &.no-loop-carousel {
-        .swiper-pagination { display: none; }
+        .swiper-pagination, .swiper-pagination-2 { display: none; }
       }
     }
+
+    .tips-carousel { margin: 0 auto; }
+
   }
 
 }

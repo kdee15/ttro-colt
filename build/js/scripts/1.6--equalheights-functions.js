@@ -47,7 +47,9 @@ equalheight = function (container) {
 
 $(document).ready(function() {
 
+  equalheight('.tips-block .reason-card .m-card-title');
   equalheight('.features-block .reason-card .m-card-title');
+  equalheight('.tips-block .reason-card .m-card-body');
   equalheight('.features-block .reason-card .m-card-body');
 
   if($(window).width() >= 767) {
@@ -57,17 +59,33 @@ $(document).ready(function() {
 
   }
 
+  if($(window).width() <= 767) {
+
+    equalheight('.carousel-block .single-carousel .m-card-body');
+    equalheight('.carousel-block .single-carousel-2 .m-card-body');
+
+  }
+
 });
 
 $(window).resize(function() {
 
+  equalheight('.tips-block .reason-card .m-card-title');
   equalheight('.features-block .reason-card .m-card-title');
+  equalheight('.tips-block .reason-card .m-card-body');
   equalheight('.features-block .reason-card .m-card-body');
 
   if($(window).width() >= 767) {
 
     equalheight('.reasons-block .reason-card .m-card-title');
     equalheight('.reasons-block .reason-card .m-card-body');
+
+  }
+
+  if($(window).width() <= 767) {
+
+    equalheight('.carousel-block .single-carousel .m-card-body');
+    equalheight('.carousel-block .single-carousel-2 .m-card-body');
 
   }
 

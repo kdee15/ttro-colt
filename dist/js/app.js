@@ -312,6 +312,41 @@ var mySwiper = new Swiper ('.features-carousel', {
     }
   }
 })
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A.1. MOBILE CLASS --------------------------------------------------------------------------------------------------
+
+var mySwiper = new Swiper ('.tips-carousel', {
+
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 15,
+  pagination: {
+    el: '.swiper-pagination-2',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next-2',
+    prevEl: '.swiper-button-prev-2',
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 5,
+    },
+    575: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    }
+  }
+})
+
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
 // A.1. WITH NO LOOP DESKTOP ------------------------------------------------------------------------------------------
@@ -410,12 +445,12 @@ var mySwiper = new Swiper ('.single-carousel-2', {
   slidesPerView: 1,
   spaceBetween: 0,
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination-2',
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-2',
+    prevEl: '.swiper-button-prev-2',
   }
 })
 // A.1. END -----------------------------------------------------------------------------------------------------------
@@ -470,7 +505,9 @@ equalheight = function (container) {
 
 $(document).ready(function() {
 
+  equalheight('.tips-block .reason-card .m-card-title');
   equalheight('.features-block .reason-card .m-card-title');
+  equalheight('.tips-block .reason-card .m-card-body');
   equalheight('.features-block .reason-card .m-card-body');
 
   if($(window).width() >= 767) {
@@ -480,17 +517,33 @@ $(document).ready(function() {
 
   }
 
+  if($(window).width() <= 767) {
+
+    equalheight('.carousel-block .single-carousel .m-card-body');
+    equalheight('.carousel-block .single-carousel-2 .m-card-body');
+
+  }
+
 });
 
 $(window).resize(function() {
 
+  equalheight('.tips-block .reason-card .m-card-title');
   equalheight('.features-block .reason-card .m-card-title');
+  equalheight('.tips-block .reason-card .m-card-body');
   equalheight('.features-block .reason-card .m-card-body');
 
   if($(window).width() >= 767) {
 
     equalheight('.reasons-block .reason-card .m-card-title');
     equalheight('.reasons-block .reason-card .m-card-body');
+
+  }
+
+  if($(window).width() <= 767) {
+
+    equalheight('.carousel-block .single-carousel .m-card-body');
+    equalheight('.carousel-block .single-carousel-2 .m-card-body');
 
   }
 

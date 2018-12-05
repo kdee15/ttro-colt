@@ -7,48 +7,19 @@
 // A.1. HOME ----------------------------------------------
 
 .page {
-  &.colt-4 {
 
-    .hero-banner {
-      .m-image {
-        &::before { padding-top: 53.5%; }
-      }
-    }
 
+  &.colt-3 {
     .block-2-col {
       .m-image-block {
         .m-image {
-          &:before { padding-top: 70%; }
+          &:before { padding-top: 130%; }
+          &.dropshadow-right {  box-shadow: 15px 15px 0 $blue; }
         }
       }
-
-      .m-text-block { font-size: 16px; }
-
-      &.a-bg-green {
-        .m-image-block { padding: $base; }
-        .m-text-block {
-          .a-block-title { font-size: 32px; }
-        }
-      }
-
-    }
-
-    .swiper-pagination-bullet-active { background: $green; }
-
-    &.content-1 {
-
-      .o-block {
-        &.image-block {
-          .m-image {
-            &.cropped {
-              &:before { padding-top: 42.8%; }
-            }
-          }
-        }
-      }
-
     }
   }
+
 
 }
 
@@ -72,23 +43,8 @@
 @media ($sm-up) {
 
   .page {
-    &.colt-4 {
 
-      .block-2-col {
-        .m-image-block {
-          .m-image {  }
-        }
 
-        &.a-bg-green {
-          .m-image-block {  }
-        }
-
-      }
-
-      &.content-1 {
-
-      }
-    }
 
   }
 
